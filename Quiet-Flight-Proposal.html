@@ -1,0 +1,2702 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Quiet Flight Surfboards Proposal</title>
+<meta name="description" content="Catalog split from the store, six store sections, custom board ordering and front page video for Quiet Flight Surfboards. Scope, schedule, costs and terms.">
+
+<!-- a private client document: keep it out of search results -->
+<meta name="robots" content="noindex, nofollow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Quiet Flight Surfboards Proposal">
+<meta property="og:description" content="Catalog split from the store, six store sections, custom board ordering and front page video. Scope, schedule, costs and terms.">
+<meta name="theme-color" content="#EFF1ED" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1413" media="(prefers-color-scheme: dark)">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%84%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+/* the artifact host supplied these; a standalone file carries its own */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img, svg, canvas { max-width: 100%; }
+[hidden] { display: none !important; }
+button { font: inherit; color: inherit; }
+</style>
+
+</head>
+<body>
+<style>
+  :root {
+    --ground:   #EFF1ED;
+    --surface:  #FBFCFA;
+    --sunk:     #E5E8E3;
+    --ink:      #14181A;
+    --muted:    #4A5654;
+    --rule:     #D2D8D3;
+    --rule-firm:#B4BEB8;
+    --accent:   #0E4F4A;
+    --accent-sk:#0E4F4A18;
+    --amber:    #A85F14;
+    --amber-sk: #A85F1416;
+    --flag:     #8C2F1D;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:   #0F1413;
+      --surface:  #171D1C;
+      --sunk:     #131918;
+      --ink:      #E8ECEA;
+      --muted:    #A7B4B1;
+      --rule:     #263130;
+      --rule-firm:#374644;
+      --accent:   #5FBDAF;
+      --accent-sk:#5FBDAF1F;
+      --amber:    #DFA24B;
+      --amber-sk: #DFA24B1C;
+      --flag:     #E08268;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:   #0F1413;
+    --surface:  #171D1C;
+    --sunk:     #131918;
+    --ink:      #E8ECEA;
+    --muted:    #A7B4B1;
+    --rule:     #263130;
+    --rule-firm:#374644;
+    --accent:   #5FBDAF;
+    --accent-sk:#5FBDAF1F;
+    --amber:    #DFA24B;
+    --amber-sk: #DFA24B1C;
+    --flag:     #E08268;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-inline: 22px;
+    padding-block: 0 72px;
+  }
+
+  /* ---- sidebar layout ---- */
+  .layout {
+    display: grid;
+    grid-template-columns: 224px minmax(0, 1fr);
+    column-gap: 52px;
+    align-items: start;
+  }
+
+  .tracker {
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding-block: 30px 24px;
+    border-right: 1px solid var(--rule);
+    padding-right: 18px;
+  }
+  .tracker .tk-title {
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 12.5px;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted);
+    padding-bottom: 10px; margin-bottom: 12px; border-bottom: 1px solid var(--rule);
+  }
+  .tracker ol { list-style: none; margin: 0; padding: 0; }
+  .tracker a {
+    display: flex; gap: 10px; align-items: baseline;
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600;
+    font-size: 16px; letter-spacing: 0.02em; line-height: 1.32;
+    color: var(--muted); text-decoration: none;
+    padding: 7px 0 7px 11px; margin-left: -1px;
+    border-left: 2px solid transparent;
+  }
+  .tracker a .tk-n {
+    font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums;
+    font-size: 11px; font-weight: 500; opacity: 0.75; flex: none; width: 21px;
+  }
+  .tracker a:hover { color: var(--ink); }
+  .tracker a.on { color: var(--accent); border-left-color: var(--accent); }
+  .tracker .tk-sub a {
+    font-size: 15px; font-weight: 500; padding-block: 4px;
+    padding-left: 26px; font-family: "Source Serif 4", Georgia, serif; letter-spacing: 0;
+  }
+  .tracker .tk-sub a .tk-n { width: 11px; font-size: 10.5px; }
+
+  .tk-progress {
+    height: 2px; background: var(--rule); margin-top: 18px; overflow: hidden;
+  }
+  .tk-progress i { display: block; height: 100%; background: var(--accent); transform: scaleX(0); transform-origin: 0 50%; }
+  .tk-cost {
+    margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--rule);
+  }
+  .tk-cost dt {
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 11.5px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+  }
+  .tk-cost dd {
+    margin: 2px 0 10px;
+    font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums;
+    font-size: 17px; letter-spacing: -0.02em;
+  }
+  .tk-cost dd.free { color: var(--accent); font-size: 15px; }
+
+  main { padding-block: 6px 0; min-width: 0; }
+
+  /* ---- pdf button ---- */
+  .pdf-btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600;
+    font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink); background: var(--surface);
+    border: 1px solid var(--rule-firm); border-radius: 0;
+    padding: 11px 18px; cursor: pointer; text-decoration: none;
+    transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+  }
+  .pdf-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .pdf-btn:disabled { cursor: progress; opacity: 0.75; }
+  .pdf-btn svg { width: 15px; height: 15px; flex: none; }
+  .pdf-btn[hidden] { display: none !important; }
+
+  .mast-top {
+    display: flex; flex-wrap: wrap; gap: 14px 20px;
+    align-items: center; justify-content: space-between;
+  }
+  .tk-dl { margin-top: 16px; }
+  .tk-dl .pdf-btn { width: 100%; justify-content: center; padding: 10px 12px; font-size: 13.5px; }
+
+  .pdf-msg {
+    font-family: "Barlow Condensed", sans-serif; font-size: 14px;
+    letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted);
+  }
+  .pdf-msg[hidden] { display: none !important; }
+
+  /* ---- read aloud on selection ---- */
+  .speak-pill {
+    position: fixed; z-index: 60; left: 0; top: 0;
+    display: inline-flex; align-items: center; gap: 8px;
+    transform: translate(-50%, calc(-100% - 10px));
+    background: var(--ink); color: var(--ground);
+    border: 0; padding: 10px 15px; cursor: pointer;
+    font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+    font-weight: 600; font-size: 13.5px; letter-spacing: 0.12em; text-transform: uppercase;
+    line-height: 1; white-space: nowrap;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.22);
+  }
+  .speak-pill:hover { background: var(--accent); color: #fff; }
+  .speak-pill:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .speak-pill[hidden] { display: none !important; }
+  .speak-pill svg { width: 14px; height: 14px; flex: none; }
+  .speak-pill .ico-stop { display: none; }
+  .speak-pill.is-playing .ico-stop { display: block; }
+  .speak-pill.is-playing .ico-play { display: none; }
+  /* the word currently being spoken */
+  .rw { background-color: transparent; }
+  .rw-on {
+    background-color: #e9ff32;
+    color: #14181A;
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px #e9ff32;
+  }
+
+  .speak-pill::after {
+    content: ""; position: absolute; left: 50%; bottom: -5px;
+    width: 10px; height: 10px; background: inherit;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  /* ---- reading voice ---- */
+  .voice-ctl {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid var(--rule-firm); background: var(--surface);
+    padding: 0 10px 0 11px; max-width: 240px;
+  }
+  .voice-ctl[hidden] { display: none !important; }
+  .voice-ctl svg { width: 15px; height: 15px; flex: none; color: var(--muted); }
+  .voice-ctl select {
+    font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+    font-weight: 600; font-size: 13.5px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--ink); background: none; border: 0; outline: none;
+    padding: 11px 2px 11px 0; max-width: 186px; cursor: pointer;
+    text-overflow: ellipsis;
+  }
+  .voice-ctl select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---- theme switch ---- */
+  .theme-ctl {
+    display: inline-flex; align-items: stretch;
+    border: 1px solid var(--rule-firm); background: var(--surface);
+  }
+  .theme-ctl button {
+    display: grid; place-items: center;
+    color: var(--muted); background: none; border: 0; cursor: pointer;
+    padding: 10px 12px; line-height: 0;
+    transition: color 120ms ease, background 120ms ease;
+  }
+  .theme-ctl button svg { width: 16px; height: 16px; display: block; }
+  .theme-ctl button + button { border-left: 1px solid var(--rule); }
+  .theme-ctl button:hover { color: var(--ink); }
+  .theme-ctl button[aria-pressed="true"] { background: var(--ink); color: var(--ground); }
+  .theme-ctl button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+  [id] { scroll-margin-top: 20px; }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .tracker {
+      top: 0; max-height: none; overflow: visible;
+      border-right: 0; border-bottom: 1px solid var(--rule-firm);
+      padding: 0; margin-bottom: 8px;
+      background: var(--ground); z-index: 20;
+    }
+    .tracker .tk-title, .tk-progress, .tk-cost { display: none; }
+    .tracker ol { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; padding-block: 4px; }
+    .tracker ol::-webkit-scrollbar { display: none; }
+    .tracker .tk-sub { display: none; }
+    .tracker a {
+      white-space: nowrap; border-left: 0; border-bottom: 2px solid transparent;
+      padding: 9px 12px; margin-left: 0; font-size: 14.5px;
+    }
+    .tracker a.on { border-left: 0; border-bottom-color: var(--accent); }
+    [id] { scroll-margin-top: 62px; }
+  }
+
+  /* ---- type roles ---- */
+  .eyebrow {
+    font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  h1, h2, h3 {
+    font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+    text-wrap: balance;
+    margin: 0;
+    line-height: 1.06;
+  }
+  h1 { font-size: clamp(42px, 9vw, 74px); font-weight: 700; letter-spacing: -0.012em; }
+  h2 { font-size: clamp(27px, 4.6vw, 36px); font-weight: 700; letter-spacing: 0.004em; }
+  h3 { font-size: 21px; font-weight: 600; letter-spacing: 0.012em; }
+  p  { margin: 0 0 1.1em; max-width: none; text-wrap: pretty; }
+  .lede { font-size: 21px; color: var(--muted); max-width: 46ch; }
+  .mono {
+    font-family: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+  .num { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-variant-numeric: tabular-nums; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  /* ---- masthead ---- */
+  header.mast { padding-block: 54px 30px; }
+  .mast h1 { margin-block: 14px 0; }
+  .mast .lede { margin-block: 16px 0; }
+
+  .board-rule { display: block; width: 100%; height: 26px; margin-block: 34px 0; overflow: visible; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 0;
+    margin-block: 30px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  .fact { padding: 15px 20px 15px 0; }
+  .fact + .fact { border-left: 1px solid var(--rule); padding-left: 20px; }
+  .fact dt {
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 12.5px;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px;
+  }
+  .fact dd { margin: 0; font-size: 16px; }
+  @media (max-width: 560px) {
+    .fact + .fact { border-left: 0; border-top: 1px solid var(--rule); padding-left: 0; }
+  }
+
+  /* ---- headline numbers ---- */
+  .topline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin-block: 40px;
+  }
+  .topline > div { background: var(--surface); padding: 22px 20px 20px; }
+  .topline .k {
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 12.5px;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted);
+  }
+  .topline .v {
+    font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums;
+    font-size: 30px; font-weight: 500; letter-spacing: -0.02em; margin-top: 7px; line-height: 1.1;
+  }
+  .topline .n { font-size: 14.5px; color: var(--muted); margin-top: 5px; line-height: 1.4; }
+  .topline .free .v { color: var(--accent); }
+
+  /* ---- sections ---- */
+  section { padding-block: 26px 10px; }
+  .sec-head {
+    display: flex; align-items: baseline; gap: 14px;
+    border-top: 2px solid var(--ink); padding-top: 11px; margin-bottom: 22px;
+  }
+  .sec-head .idx {
+    font-family: "IBM Plex Mono", monospace; font-size: 13px; font-weight: 500;
+    color: var(--muted); padding-top: 4px;
+  }
+
+  /* ---- findings ---- */
+  .finding { border-left: 3px solid var(--flag); padding: 2px 0 2px 18px; margin-bottom: 26px; }
+  .finding h3 { margin-bottom: 7px; }
+  .finding p { margin-bottom: 0; }
+  .finding p + p { margin-top: 0.7em; }
+
+  .record {
+    background: var(--sunk); border: 1px solid var(--rule);
+    padding: 14px 16px; margin: 16px 0 0; overflow-x: auto;
+    font-family: "IBM Plex Mono", monospace; font-size: 13.5px; line-height: 1.8;
+    white-space: pre; color: var(--muted);
+  }
+  .record b { color: var(--flag); font-weight: 600; }
+  .record .cap {
+    display: block; white-space: normal; font-size: 11.5px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 9px;
+  }
+
+  /* ---- phase blocks ---- */
+  .phase { border-top: 1px solid var(--rule); padding-block: 24px; }
+  .phase:first-of-type { border-top: 1px solid var(--rule-firm); }
+  .phase-top {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px; margin-bottom: 4px;
+  }
+  .phase-no {
+    font-family: "IBM Plex Mono", monospace; font-size: 12.5px; font-weight: 600;
+    letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase;
+  }
+  .phase-top h3 { flex: 1 1 260px; }
+  .tag {
+    font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums;
+    font-size: 13px; font-weight: 500; padding: 3px 9px; border: 1px solid var(--rule-firm);
+    white-space: nowrap;
+  }
+  .tag.price { color: var(--ink); }
+  .tag.free { color: var(--accent); border-color: var(--accent); background: var(--accent-sk); }
+  .tag.when { color: var(--muted); border-style: dashed; }
+  .phase .why { color: var(--muted); font-size: 18px; margin-block: 10px 14px; }
+  .phase ul { margin: 0; padding-left: 0; list-style: none; max-width: none; }
+  .phase li { position: relative; padding-left: 22px; margin-bottom: 9px; font-size: 18px; line-height: 1.6; }
+  .phase li::before {
+    content: ""; position: absolute; left: 0; top: 0.62em;
+    width: 8px; height: 1px; background: var(--rule-firm);
+  }
+  .note {
+    margin-top: 16px; padding: 13px 16px; background: var(--amber-sk);
+    border-left: 3px solid var(--amber); font-size: 17px; color: var(--ink); line-height: 1.6;
+  }
+  .note strong { font-family: "Barlow Condensed", sans-serif; letter-spacing: 0.06em; text-transform: uppercase; font-size: 13px; }
+  .note p { margin: 0; max-width: none; }
+
+  /* ---- stepped timeline (04.1) ---- */
+  .track { border-top: 1px solid var(--rule-firm); padding-block: 28px 34px; }
+  .track-head {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px;
+  }
+  .track-no {
+    font-family: "IBM Plex Mono", monospace; font-size: 12.5px; font-weight: 600;
+    letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase;
+  }
+  .track-head h3 { flex: 1 1 240px; }
+  .track-why { color: var(--muted); font-size: 18px; margin-block: 13px 24px; }
+
+  .steps { counter-reset: s; list-style: none; margin: 0; padding: 0; position: relative; }
+  .steps::before {
+    content: ""; position: absolute; left: 13px; top: 12px; bottom: 16px;
+    width: 1px; background: var(--rule-firm);
+  }
+  .steps > li { position: relative; padding-left: 48px; padding-bottom: 22px; }
+  .steps > li:last-child { padding-bottom: 2px; }
+  .steps > li::before {
+    counter-increment: s; content: counter(s);
+    position: absolute; left: 0; top: -2px;
+    width: 27px; height: 27px;
+    display: grid; place-items: center;
+    background: var(--surface); border: 1px solid var(--rule-firm);
+    font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums;
+    font-size: 12px; font-weight: 500; color: var(--muted);
+  }
+  .steps h4 {
+    font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+    font-size: 18.5px; font-weight: 600; letter-spacing: 0.015em;
+    margin: 0 0 5px; line-height: 1.15; text-wrap: balance;
+  }
+  .steps p { font-size: 17px; color: var(--muted); margin: 0; line-height: 1.6; }
+
+  .payoff {
+    margin-top: 26px; padding: 17px 22px 8px;
+    background: var(--accent-sk); border-left: 3px solid var(--accent);
+  }
+  .payoff-h {
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 13px;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent);
+    margin-bottom: 12px;
+  }
+  .payoff ul { list-style: none; margin: 0; padding: 0; }
+  .payoff li {
+    position: relative; padding-left: 22px; margin-bottom: 11px;
+    font-size: 17.5px; line-height: 1.56;
+  }
+  .payoff li::before {
+    content: ""; position: absolute; left: 0; top: 0.68em;
+    width: 9px; height: 1px; background: var(--accent);
+  }
+
+  @media (max-width: 480px) {
+    .steps > li { padding-left: 40px; }
+    .steps > li::before { width: 23px; height: 23px; font-size: 11px; }
+    .steps::before { left: 11px; }
+    .payoff { padding-inline: 16px; }
+  }
+
+  /* ---- gantt ---- */
+  .gantt { border: 1px solid var(--rule); background: var(--surface); padding: 20px 18px 14px; overflow-x: auto; }
+  .gantt-inner { min-width: 500px; }
+  .gantt-head, .gantt-row { display: grid; grid-template-columns: 148px repeat(6, 1fr); align-items: center; }
+  .gantt-head { border-bottom: 1px solid var(--rule); padding-bottom: 7px; margin-bottom: 11px; }
+  .gantt-head span {
+    font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--muted);
+    text-align: center; font-variant-numeric: tabular-nums;
+  }
+  .gantt-head span:first-child {
+    text-align: left; font-family: "Barlow Condensed", sans-serif; font-size: 12px;
+    letter-spacing: 0.15em; text-transform: uppercase;
+  }
+  .gantt-row { margin-bottom: 9px; }
+  .gantt-row .lbl {
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 14.5px;
+    letter-spacing: 0.02em; padding-right: 12px;
+  }
+  .bar { height: 15px; background: var(--accent); }
+  .bar.is-free { background: var(--accent-sk); border: 1px solid var(--accent); }
+  .bar.is-mkt { background: var(--amber-sk); border: 1px dashed var(--amber); }
+  .gantt-foot {
+    border-top: 1px solid var(--rule); margin-top: 6px; padding-top: 10px;
+    font-size: 14.5px; color: var(--muted);
+  }
+
+  /* ---- tables ---- */
+  .tw { overflow-x: auto; border: 1px solid var(--rule); background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 440px; }
+  th, td { text-align: left; padding: 14px 16px; border-bottom: 1px solid var(--rule); vertical-align: top; font-size: 17px; }
+  thead th {
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 12.5px;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted);
+    border-bottom: 1px solid var(--rule-firm); white-space: nowrap;
+  }
+  td.r, th.r { text-align: right; }
+  td.amt {
+    font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums;
+    white-space: nowrap; font-size: 16px;
+  }
+  tbody tr:last-child td { border-bottom: 0; }
+  tr.total td {
+    border-top: 2px solid var(--ink); border-bottom: 0;
+    font-family: "Barlow Condensed", sans-serif; font-weight: 700;
+    font-size: 19px; letter-spacing: 0.02em; padding-block: 14px;
+  }
+  tr.total td.amt { font-family: "IBM Plex Mono", monospace; font-size: 20px; font-weight: 600; }
+  td .sub { display: block; color: var(--muted); font-size: 14.5px; line-height: 1.5; margin-top: 4px; }
+  .zero { color: var(--accent); }
+
+  /* ---- retainer ---- */
+  .retainer { border: 1px solid var(--rule-firm); background: var(--surface); }
+  .retainer-head {
+    display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: baseline;
+    justify-content: space-between; padding: 20px 22px; border-bottom: 1px solid var(--rule);
+  }
+  .retainer-head .price {
+    font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums;
+    font-size: 27px; font-weight: 500; letter-spacing: -0.02em;
+  }
+  .retainer-head .price small { font-size: 14px; color: var(--muted); font-weight: 400; letter-spacing: 0; }
+  .retainer-body { padding: 20px 22px 8px; }
+  .retainer-body ul { columns: 2; column-gap: 34px; margin: 0; padding-left: 0; list-style: none; }
+  .retainer-body li { position: relative; padding-left: 22px; margin-bottom: 11px; font-size: 17px; line-height: 1.55; break-inside: avoid; }
+  .retainer-body li::before {
+    content: ""; position: absolute; left: 0; top: 0.6em; width: 8px; height: 1px; background: var(--rule-firm);
+  }
+  @media (max-width: 620px) { .retainer-body ul { columns: 1; } }
+
+  /* ---- terms ---- */
+  ol.terms { counter-reset: t; list-style: none; padding-left: 0; margin: 0; }
+  ol.terms > li {
+    counter-increment: t; position: relative; padding-left: 40px;
+    margin-bottom: 17px; font-size: 17px; line-height: 1.6; max-width: none;
+  }
+  ol.terms > li::before {
+    content: counter(t, decimal-leading-zero); position: absolute; left: 0; top: 0.16em;
+    font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--muted);
+  }
+  ol.terms b {
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 16px;
+    letter-spacing: 0.03em; text-transform: uppercase; margin-right: 6px;
+  }
+
+  /* ---- needs ---- */
+  .needs { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .needs > div { background: var(--surface); padding: 16px 18px; }
+  .needs h3 { font-size: 17.5px; margin-bottom: 6px; }
+  .needs p { font-size: 16px; color: var(--muted); margin: 0; line-height: 1.55; }
+
+  /* ---- sign ---- */
+  .sign { border: 2px solid var(--ink); padding: 26px 24px 22px; margin-top: 12px; }
+  .sign-note { font-size: 15px; color: var(--muted); margin-block: 14px 0; }
+  .sign-grid {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 42px; margin-top: 24px;
+  }
+  @media (max-width: 680px) { .sign-grid { grid-template-columns: 1fr; } }
+
+  .sig-pad-wrap { position: relative; border-bottom: 1px solid var(--rule-firm); }
+  .sig-pad {
+    display: block; width: 100%; height: 92px;
+    cursor: crosshair; touch-action: none;
+  }
+  .sig-hint {
+    position: absolute; left: 0; bottom: 10px; pointer-events: none;
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 13px;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--rule-firm);
+  }
+  .sig-pad-wrap.has-ink .sig-hint { display: none; }
+  .sig-clear {
+    position: absolute; right: 0; top: 2px; display: none;
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 12px;
+    letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--muted); background: none; border: 0; cursor: pointer; padding: 4px 2px;
+  }
+  .sig-clear:hover { color: var(--flag); }
+  .sig-pad-wrap.has-ink .sig-clear { display: block; }
+
+  .sig-lbl {
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 12.5px;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-top: 8px;
+  }
+  .sig-date { display: flex; align-items: center; gap: 12px; margin-top: 16px; }
+  .sig-date span {
+    font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 12.5px;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted);
+  }
+  .sig-date input {
+    flex: 1 1 auto; min-width: 0;
+    font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums;
+    font-size: 15px; color: var(--ink);
+    background: var(--surface); border: 1px solid var(--rule-firm);
+    padding: 8px 10px; border-radius: 0;
+  }
+  .sig-date input:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+
+  footer {
+    margin-top: 50px; padding-top: 18px; border-top: 1px solid var(--rule);
+    display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between;
+    font-size: 14.5px; color: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+  /* ---- print, so Ctrl+P also gives a clean document ---- */
+  @media print {
+    .tracker, .pdf-btn, .pdf-msg, .theme-ctl, .voice-ctl, .speak-pill, .board-rule, .sig-clear, .sig-hint, .sign-note { display: none !important; }
+    .layout { display: block; }
+    .sheet { max-width: none; padding: 0; }
+    body { background: #fff; color: #000; font-size: 11pt; line-height: 1.5; }
+    header.mast { padding-block: 0 18pt; }
+    h1 { font-size: 34pt; }
+    h2 { font-size: 18pt; }
+    section { page-break-inside: auto; }
+    .sec-head { page-break-after: avoid; }
+    h3 { page-break-after: avoid; }
+    .phase, .finding, .note, .record, .needs > div, .sign, tr { page-break-inside: avoid; }
+    .topline, .retainer, .tw, .gantt { page-break-inside: avoid; }
+    a { color: #000; text-decoration: none; }
+  }
+</style>
+
+<div class="sheet">
+
+  <header class="mast">
+    <div class="mast-top">
+      <div class="eyebrow">Proposal &middot; 15 October 2026</div>
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+        <label class="voice-ctl" id="voicectl" hidden title="Reading voice">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M8.5 2.5 4.8 5.6H2.2v4.8h2.6l3.7 3.1z" fill="currentColor" stroke="none"></path>
+            <path d="M11.3 5.6a3.4 3.4 0 0 1 0 4.8"></path>
+          </svg>
+          <select id="voicepick" aria-label="Reading voice"></select>
+        </label>
+        <div class="theme-ctl" id="themectl" role="group" aria-label="Page theme">
+          <button type="button" data-mode="auto" aria-pressed="true" aria-label="Match my device theme" title="Match my device">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <circle cx="8" cy="8" r="6"></circle>
+              <path d="M8 2a6 6 0 0 1 0 12z" fill="currentColor" stroke="none"></path>
+            </svg>
+          </button>
+          <button type="button" data-mode="light" aria-pressed="false" aria-label="Light theme" title="Light">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
+              <circle cx="8" cy="8" r="3.1"></circle>
+              <path d="M8 1v1.5M8 13.5V15M15 8h-1.5M2.5 8H1M12.95 3.05l-1.06 1.06M4.11 11.89l-1.06 1.06M12.95 12.95l-1.06-1.06M4.11 4.11L3.05 3.05"></path>
+            </svg>
+          </button>
+          <button type="button" data-mode="dark" aria-pressed="false" aria-label="Dark theme" title="Dark">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true">
+              <path d="M13.3 9.7A5.9 5.9 0 0 1 6.3 2.7a5.9 5.9 0 1 0 7 7z"></path>
+            </svg>
+          </button>
+        </div>
+        <span class="pdf-msg" id="pdfmsg" hidden></span>
+        <button type="button" class="pdf-btn" id="pdfbtn" hidden>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path d="M8 1v9M4.5 6.5L8 10l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M1.8 11.5v1.7a1 1 0 0 0 1 1h10.4a1 1 0 0 0 1-1v-1.7" stroke-linecap="round"></path>
+          </svg>
+          Download PDF
+        </button>
+      </div>
+    </div>
+    <h1>Quiet Flight<br>Surfboards</h1>
+    <p class="lede">Splitting the catalog off from the store, building the six store sections, and giving every board model its own page with photos and video.</p>
+
+    <svg class="board-rule" viewBox="0 0 900 26" preserveAspectRatio="none" role="img" aria-label="Surfboard outline rule">
+      <path d="M2 13 C 130 1, 400 1, 450 1 C 500 1, 770 1, 898 13 C 770 25, 500 25, 450 25 C 400 25, 130 25, 2 13 Z"
+            fill="none" stroke="currentColor" stroke-width="1" opacity="0.32"></path>
+      <line x1="2" y1="13" x2="898" y2="13" stroke="currentColor" stroke-width="1" opacity="0.18"></line>
+    </svg>
+
+    <dl class="facts">
+      <div class="fact">
+        <dt>Prepared for</dt>
+        <dd>Jim Leasure, Quiet Flight Surfboards<br>377 Imperial Blvd C-1, Cape Canaveral FL</dd>
+      </div>
+      <div class="fact">
+        <dt>Prepared by</dt>
+        <dd>Rakibul Hasan<br>Shopify Partner, Ecommerce UX<br>
+          <a href="mailto:somotomox@gmail.com">somotomox@gmail.com</a><br>
+          <a href="tel:+8801754917061">+880 1754 917061</a></dd>
+      </div>
+      <div class="fact">
+        <dt>Valid until</dt>
+        <dd class="num">15 November 2026</dd>
+      </div>
+    </dl>
+  </header>
+
+  <div class="topline">
+    <div>
+      <div class="k">Build total</div>
+      <div class="v">$1,650</div>
+      <div class="n">One time, paid in three installments</div>
+    </div>
+    <div>
+      <div class="k">Time to launch</div>
+      <div class="v">6 weeks</div>
+      <div class="n">From the day access is granted</div>
+    </div>
+    <div>
+      <div class="k">Marketing, after launch</div>
+      <div class="v">$450<small style="font-size:14px;color:var(--muted)">/mo</small></div>
+      <div class="n">Six month minimum, optional</div>
+    </div>
+    <div class="free">
+      <div class="k">Audit and urgent fixes</div>
+      <div class="v">$0</div>
+      <div class="n">The audit and the ordering fix, no charge</div>
+    </div>
+  </div>
+
+  <div class="layout">
+
+  <aside class="tracker" aria-label="Proposal contents">
+    <div class="tk-title">Contents</div>
+    <nav>
+      <ol>
+        <li><a href="#found"><span class="tk-n">01</span>What we found</a></li>
+        <li><a href="#scope"><span class="tk-n">02</span>Scope of work</a>
+          <ol class="tk-sub">
+            <li><a href="#p1"><span class="tk-n">1</span>Stop the bleeding</a></li>
+            <li><a href="#p2"><span class="tk-n">2</span>Catalog, split from store</a></li>
+            <li><a href="#p3"><span class="tk-n">3</span>The store, six sections</a></li>
+            <li><a href="#p4"><span class="tk-n">4</span>Custom board ordering</a></li>
+            <li><a href="#p5"><span class="tk-n">5</span>Updates and video</a></li>
+          </ol>
+        </li>
+        <li><a href="#schedule"><span class="tk-n">03</span>Schedule</a></li>
+        <li><a href="#cost"><span class="tk-n">04</span>Cost</a></li>
+        <li><a href="#how"><span class="tk-n">4.1</span>What the phases do</a></li>
+        <li><a href="#marketing"><span class="tk-n">05</span>Marketing</a></li>
+        <li><a href="#payment"><span class="tk-n">06</span>Payment schedule</a></li>
+        <li><a href="#terms"><span class="tk-n">07</span>Terms</a></li>
+        <li><a href="#needs"><span class="tk-n">08</span>What I need</a></li>
+        <li><a href="#accept"><span class="tk-n">09</span>Acceptance</a></li>
+      </ol>
+    </nav>
+    <div class="tk-progress"><i id="tkbar"></i></div>
+    <dl class="tk-cost">
+      <dt>Build total</dt>
+      <dd>$1,650</dd>
+      <dt>Then, monthly</dt>
+      <dd>$450</dd>
+      <dt>Audit and urgent fix</dt>
+      <dd class="free">No charge</dd>
+    </dl>
+    <div class="tk-dl">
+      <button type="button" class="pdf-btn" id="pdfbtn2" hidden>Download PDF</button>
+    </div>
+  </aside>
+
+  <main>
+
+  <!-- ============ 1 ============ -->
+  <section id="found">
+    <div class="sec-head"><span class="idx">01</span><h2>What we found</h2></div>
+
+    <p>You asked me to look at one glitch. On 15 September I pulled all the product data out of your store. The glitch is not the real problem. It is a sign of a bigger one. Here are three things, in the order they cost you money.</p>
+
+    <div class="finding">
+      <h3>Sixteen board pages can be checked out for $0.00</h3>
+      <p>It is not just The Marlin. Every model page has the same problem: Classic Funshape, Black Marlin, Ultra Glide, GTO Longboard, Jumbo Sting Fish, The Pontoon, The Skiff, Double Agent, Secret Agent, The Sea Cow, The Anti-Hero, The Reaper, The Vandal, The Bad Fish, The Mahi Mahi and The Marlin.</p>
+      <p>These pages were meant to be spec sheets, not products. But each one was saved in Shopify as a product. The price is zero and stock tracking is off. That means they never sell out, and anyone can buy them. Your website code is fine. The product records are wrong.</p>
+      <div class="record"><span class="cap">The Marlin, product record, pulled 15 Sep 2026</span>price               <b>"0.00"</b>
+inventory_management <b>null</b>      (never runs out)
+requires_shipping    <b>false</b>     (no address collected)
+taxable              <b>false</b></div>
+      <p style="margin-top:14px">This is also why people can order in quantities you never put up for sale. With stock tracking off, nothing stops someone putting fifty of a board in the cart. Shipping is switched off on those records too, so a $0.00 order does not even ask for an address. You first mentioned this in April last year, so it is worth checking your order history for any that went through.</p>
+    </div>
+
+    <div class="finding">
+      <h3>All 31 boards in stock can be sold more than once</h3>
+      <p>Every board you sell, new and used, has stock tracking turned off. Each one is a single board. So four people can buy the same 5'10 Reaper on the same afternoon, and you would only find out when you went to pack them. None of the boards have a SKU or a shipping weight either. Shopify thinks a surfboard weighs nothing, so it quotes the wrong postage.</p>
+      <p>Three separate listings exist for a 6'0 Anti Hero and two for a 6'0 Pontoon, under slightly different spellings.</p>
+    </div>
+
+    <div class="finding">
+      <h3>Google no longer sends your brand name to you</h3>
+      <p>Search "Quiet Flight" today. What comes back is surf shop listings, store directories and retail pages. That is because the retail chain was sold to Billabong in 2008, and it now belongs to Authentic Brands Group. Your own factory site sits near the bottom of a page you should own.</p>
+      <p>Now search "custom surfboards Cocoa Beach". That page belongs to Neilson, Oceansports World and Allen White. Tom Neilson is named on your own About page as one of the shapers who came through this factory. Today he ranks above you. He shows a price list starting at $1450 and lists the boards he has in stock. You show $0.00.</p>
+    </div>
+
+    <p>One smaller thing. You said to leave the About page as it is, and I will. But it still carries the theme's demo text at the bottom, under a heading called Our Services. It is three paragraphs about building relationships with partners in the public and private sectors. Your history stays exactly as written. Only the filler comes off.</p>
+  </section>
+
+  <!-- ============ 2 ============ -->
+  <section id="scope">
+    <div class="sec-head"><span class="idx">02</span><h2>Scope of work</h2></div>
+
+    <p>Taking your email of 9 October point by point, here is where each thing lands.</p>
+
+    <div class="tw" style="margin-bottom:26px">
+      <table>
+        <thead><tr><th>What you asked for</th><th>Where it is handled</th></tr></thead>
+        <tbody>
+          <tr><td>Stop the ordering glitch<span class="sub">People ordering quantities that are not for sale</span></td><td>Phase 1, no charge</td></tr>
+          <tr><td>Catalog page separate from the store<span class="sub">The way Lost does it: a model page with no price and no cart</span></td><td>Phase 2</td></tr>
+          <tr><td>Add more models, make each model page more detailed with photos and video<span class="sub">Tabs for description, dimensions, photos and video</span></td><td>Phase 2</td></tr>
+          <tr><td>Store pages: in-stock, used, custom, factory seconds, apparel, hats</td><td>Phase 3</td></tr>
+          <tr><td>Custom boards<span class="sub">An order form, the way Channel Islands builds one</span></td><td>Phase 4</td></tr>
+          <tr><td>Video on the front page</td><td>Phase 5</td></tr>
+          <tr><td>About us, keep the same</td><td>Left alone, bar the demo text</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The four sites you sent are not really four looks. They are three different jobs. Lost shows how a catalog page works when it is not trying to sell: description, dimensions, photos and video on tabs, no price, no cart. Channel Islands shows the custom order form. Rusty shows how a model connects to the boards you actually have. Christenson is the one that is purely about the look.</p>
+
+    <div class="phase" id="p1">
+      <div class="phase-top">
+        <span class="phase-no">Phase 1</span>
+        <h3>Stop the bleeding</h3>
+        <span class="tag free">No charge</span>
+        <span class="tag when">2 working days</span>
+      </div>
+      <p class="why">Done the day you give me access, before I send any invoice.</p>
+      <ul>
+        <li>Disable checkout on all 16 model pages so no one can buy a spec sheet</li>
+        <li>Switch on stock tracking for all 31 boards, set to the real count from your floor</li>
+        <li>Add SKUs and real shipping weights so board boxes quote the correct rate</li>
+        <li>Remove the demo text from the bottom of the About page. Your history stays as it is</li>
+        <li>Check your order history for $0.00 and bulk orders already placed, and report what is there</li>
+      </ul>
+    </div>
+
+    <div class="phase" id="p2">
+      <div class="phase-top">
+        <span class="phase-no">Phase 2</span>
+        <h3>The catalog, separate from the store</h3>
+        <span class="tag price">$650</span>
+        <span class="tag when">Weeks 1 to 3</span>
+      </div>
+      <p class="why">This is the main thing you asked for. The catalog stops being part of the shop and becomes what it was always meant to be: the place people go to read about a board.</p>
+      <ul>
+        <li>All 16 model pages stop being products. No price, no cart, nothing to check out</li>
+        <li>Each model page gets tabs, the way Lost does it: Description, Dimensions, Photos, Video</li>
+        <li>Dimensions as a proper table, length by width by thickness with volume in litres</li>
+        <li>Photos and video per model, loaded from what you send me</li>
+        <li>New models added to the catalog from your list</li>
+        <li>Every model links through to the boards of that model you have in stock, and to a custom order</li>
+        <li>Duplicate listings merged, three 6'0 Anti Heroes down to one</li>
+        <li>Model titles and descriptions rewritten so they can be found in search</li>
+      </ul>
+      <div class="note"><p><strong>Note</strong> &nbsp;Video on a model page is hosted on Shopify, not pulled in from YouTube. Shopify video loads faster and carries no branding or suggested videos at the end.</p></div>
+    </div>
+
+    <div class="phase" id="p3">
+      <div class="phase-top">
+        <span class="phase-no">Phase 3</span>
+        <h3>The store, six sections</h3>
+        <span class="tag price">$500</span>
+        <span class="tag when">Weeks 3 to 5</span>
+      </div>
+      <p class="why">Everything that is actually for sale, in the six sections you listed.</p>
+      <ul>
+        <li>In-stock surfboards, used surfboards, custom boards, factory seconds, apparel, hats</li>
+        <li>Filters a surfer can use: length, volume, board type, condition, price</li>
+        <li>New, used and factory seconds clearly separated rather than mixed in one list</li>
+        <li>Every board published with a price, photos and dimensions in one consistent format</li>
+        <li>Stock tracking, SKUs and weights carried through from Phase 1</li>
+        <li>Apparel and hats: the sections, page templates, and size and colour options built and working, with one example product in each so you can copy the pattern</li>
+      </ul>
+      <div class="note"><p><strong>About apparel and hats</strong> &nbsp;I build the sections and make them work. Loading your clothing and hats, with their prices, sizes and photos, is yours to do or a separate job to quote once you know how many items there are.</p></div>
+    </div>
+
+    <div class="phase" id="p4">
+      <div class="phase-top">
+        <span class="phase-no">Phase 4</span>
+        <h3>Custom board ordering</h3>
+        <span class="tag price">$350</span>
+        <span class="tag when">Weeks 4 to 6</span>
+      </div>
+      <p class="why">Built on the Channel Islands pattern you sent, adapted to how your factory takes an order.</p>
+      <ul>
+        <li>Customer picks a model, then a size from that model's real run</li>
+        <li>Construction, fin plug setup, fin system and tail shape chosen on the same page</li>
+        <li>Extras priced as they are chosen: resin tint, a name on the stringer, logo placement</li>
+        <li>A notes box for anything the customer wants to tell the shaper</li>
+        <li>Price updates as options change, so nobody gets a surprise at the end</li>
+        <li>Lead time shown before checkout, not after</li>
+        <li>Deposit or payment in full, whichever you prefer</li>
+        <li>Orders arrive with every spec attached and print on one sheet for the shaping bay</li>
+      </ul>
+      <div class="note"><p><strong>One constraint to know about</strong> &nbsp;Shopify allows three option menus per product. Channel Islands uses more than that. Anything past the third is built as an attached option instead. It works the same for the customer and still adjusts the price, but I want you to hear it now rather than at week five.</p></div>
+    </div>
+
+    <div class="phase" id="p5">
+      <div class="phase-top">
+        <span class="phase-no">Phase 5</span>
+        <h3>Modern updates and front page video</h3>
+        <span class="tag price">$150</span>
+        <span class="tag when">Weeks 5 to 6</span>
+      </div>
+      <p class="why">You said you are not looking to change the site much, so this is a tidy-up and the video, not a redesign. Your layout and your theme stay.</p>
+      <ul>
+        <li>Video section on the front page, muted and looping, with a still image behind it</li>
+        <li>Type sizes, spacing and buttons brought in line across the site</li>
+        <li>Your home page currently has no main heading at all. That gets fixed</li>
+        <li>Speed pass: shrink the images, load them only when needed, remove unused scripts</li>
+        <li>Page titles and descriptions set so Google can read the site properly</li>
+        <li>Checked on phones and tablets, which is where most surf traffic comes from</li>
+      </ul>
+      <div class="note"><p><strong>You asked how videos are on the front page</strong> &nbsp;They work well, with two rules. The video must not be the thing the page waits for before it appears, and it needs a still image behind it for phones on a weak signal. Hosted on Shopify and kept to about 10 to 20 seconds, a muted loop of the shaping floor is the right first thing a visitor sees from a factory. Pulled in from YouTube instead, it is heavier and slows the page down, so I will not do it that way.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 3 ============ -->
+  <section id="schedule">
+    <div class="sec-head"><span class="idx">03</span><h2>Schedule</h2></div>
+    <div class="gantt">
+      <div class="gantt-inner">
+        <div class="gantt-head">
+          <span>Week</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+        </div>
+        <div class="gantt-row">
+          <div class="lbl">1 &nbsp;Emergency fix</div>
+          <div style="grid-column:2/3"><div class="bar is-free"></div></div>
+        </div>
+        <div class="gantt-row">
+          <div class="lbl">2 &nbsp;Catalog</div>
+          <div style="grid-column:2/5"><div class="bar"></div></div>
+        </div>
+        <div class="gantt-row">
+          <div class="lbl">3 &nbsp;Store</div>
+          <div style="grid-column:4/7"><div class="bar"></div></div>
+        </div>
+        <div class="gantt-row">
+          <div class="lbl">4 &nbsp;Board builder</div>
+          <div style="grid-column:5/8"><div class="bar"></div></div>
+        </div>
+        <div class="gantt-row">
+          <div class="lbl">5 &nbsp;Updates, video</div>
+          <div style="grid-column:6/8"><div class="bar"></div></div>
+        </div>
+        <div class="gantt-row">
+          <div class="lbl">Marketing</div>
+          <div style="grid-column:7/8"><div class="bar is-mkt"></div></div>
+        </div>
+      </div>
+      <div class="gantt-foot">Phases overlap where they safely can. The store is built while the catalog models are waiting on your photos and video. Marketing begins the week the work goes live.</div>
+    </div>
+  </section>
+
+  <!-- ============ 4 ============ -->
+  <section id="cost">
+    <div class="sec-head"><span class="idx">04</span><h2>Cost</h2></div>
+    <div class="tw">
+      <table>
+        <thead>
+          <tr><th>Item</th><th class="r">Amount</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Technical audit
+              <span class="sub">Completed 15 September, findings in section 01</span></td>
+            <td class="amt r zero">No charge</td>
+          </tr>
+          <tr>
+            <td>Phase 1 &nbsp;Emergency fix
+              <span class="sub">Ordering glitch stopped, stock tracking switched on</span></td>
+            <td class="amt r zero">No charge</td>
+          </tr>
+          <tr>
+            <td>Phase 2 &nbsp;The catalog, separate from the store
+              <span class="sub">16 model pages rebuilt with tabs, dimensions, photos and video, plus your new models</span></td>
+            <td class="amt r">$650.00</td>
+          </tr>
+          <tr>
+            <td>Phase 3 &nbsp;The store, six sections
+              <span class="sub">In-stock, used, custom, factory seconds, apparel, hats, with filters</span></td>
+            <td class="amt r">$500.00</td>
+          </tr>
+          <tr>
+            <td>Phase 4 &nbsp;Custom board ordering
+              <span class="sub">Live pricing order form, specs attached to every order</span></td>
+            <td class="amt r">$350.00</td>
+          </tr>
+          <tr>
+            <td>Phase 5 &nbsp;Modern updates and front page video
+              <span class="sub">Video section, tidy-up, speed and search pass</span></td>
+            <td class="amt r">$150.00</td>
+          </tr>
+          <tr class="total">
+            <td>Build total</td>
+            <td class="amt r">$1,650.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--muted);font-size:15.5px">All figures in US dollars. This covers labour only. Your Shopify subscription, any paid apps, advertising spend, stock photography and professional photo or video shoots are not included and are billed to you directly by those providers.</p>
+  </section>
+
+  <!-- ============ 4.1 ============ -->
+  <section id="how">
+    <div class="sec-head"><span class="idx">04.1</span><h2>What the four paid phases actually do</h2></div>
+    <p>Section 02 lists what gets built. This section walks through it step by step, in the order the work happens. It also says what each phase changes for your business. If you read one part of this proposal, read this one.</p>
+
+    <div class="track">
+      <div class="track-head">
+        <span class="track-no">Phase 2</span>
+        <h3>The catalog, separate from the store</h3>
+        <span class="tag when">Weeks 1 to 3</span>
+        <span class="tag price">$650</span>
+      </div>
+      <p class="track-why">Right now your catalog and your shop are the same thing, which is why a spec sheet can be put in a cart. Pulling them apart is what you asked for, and it fixes the glitch as a side effect.</p>
+
+      <ol class="steps">
+        <li>
+          <h4>Count the floor</h4>
+          <p>We get on a call and you walk the shop while we count what is there. Every board gets a stock number, a SKU and a real shipping weight. Right now not one of your 31 boards has any of those three.</p>
+        </li>
+        <li>
+          <h4>Turn the model pages into catalog pages</h4>
+          <p>The Marlin, the Reaper, the Pontoon and the other thirteen stop being products with a price of zero. They become pages you read, with no cart on them at all. This is how Lost does it, and it is the structure you pointed me to.</p>
+        </li>
+        <li>
+          <h4>Give each model its tabs</h4>
+          <p>Description, Dimensions, Photos, Video. The size run becomes a proper table with length, width, thickness and volume, so a rider can match a board to their weight without asking you.</p>
+        </li>
+        <li>
+          <h4>Load your photos and video</h4>
+          <p>Each model gets its own set, from what you send me. Video sits on Shopify rather than YouTube, so it loads fast and carries no outside branding.</p>
+        </li>
+        <li>
+          <h4>Add the new models</h4>
+          <p>Send me the list with dimensions and photos and they go in alongside the sixteen that are there.</p>
+        </li>
+        <li>
+          <h4>Connect each model to what is in stock</h4>
+          <p>Your 5'10 Marlin, your 6'2 Marlin and the used 5'9 Marlin all sit under the Marlin page. Someone reading about the Marlin sees the three you have, with prices, and a way to order one custom.</p>
+        </li>
+      </ol>
+
+      <div class="payoff">
+        <div class="payoff-h">What this changes for you</div>
+        <ul>
+          <li>Nobody can order a board that is not for sale, because there is nothing on the page to order.</li>
+          <li>Someone who lands on the Marlin page can see the Marlins you have. Today there is no path from the spec sheet to a board for sale, so that visitor leaves.</li>
+          <li>Each model becomes a page Google can rank, with real dimensions and real photos on it rather than a price of zero.</li>
+          <li>Video of a board being ridden does more selling than any paragraph you could write about it.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="track">
+      <div class="track-head">
+        <span class="track-no">Phase 3</span>
+        <h3>The store, six sections</h3>
+        <span class="tag when">Weeks 3 to 5</span>
+        <span class="tag price">$500</span>
+      </div>
+      <p class="track-why">The catalog tells people about boards. The store sells them. Six sections, as you listed them.</p>
+
+      <ol class="steps">
+        <li>
+          <h4>Build the six sections</h4>
+          <p>In-stock surfboards, used surfboards, custom boards, factory seconds, apparel, hats. Each with its own page, its own look and its own rules.</p>
+        </li>
+        <li>
+          <h4>Sort the boards into them</h4>
+          <p>New boards, used boards and factory seconds stop being mixed into one list. A buyer looking for a cheap first board and a buyer looking for a new performance shortboard stop getting in each other's way.</p>
+        </li>
+        <li>
+          <h4>Merge the duplicates and publish prices</h4>
+          <p>Three listings for a 6'0 Anti Hero become one. Every board gets a price, photos and its dimensions written the same way.</p>
+        </li>
+        <li>
+          <h4>Switch on the filters</h4>
+          <p>Length, volume, board type, condition and price. This is the single biggest thing that stops a surfer leaving a shop page.</p>
+        </li>
+        <li>
+          <h4>Set up apparel and hats</h4>
+          <p>The sections, the page templates and the size and colour options, all working, with one example product in each so your team can copy the pattern and add the rest.</p>
+        </li>
+      </ol>
+
+      <div class="payoff">
+        <div class="payoff-h">What this changes for you</div>
+        <ul>
+          <li>You stop selling the same board twice. With tracking off, four people can buy one 5'10 Reaper and you find out when you go to pack them.</li>
+          <li>A buyer can cut your boards down to the three that suit their weight and ability without phoning the shop. Most people will not phone. They will just go somewhere else.</li>
+          <li>Factory seconds get their own shelf instead of looking like a mistake in the new board list.</li>
+          <li>Apparel and hats are ready to sell the day you have stock to put in them.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="track">
+      <div class="track-head">
+        <span class="track-no">Phase 4</span>
+        <h3>Custom board ordering</h3>
+        <span class="tag when">Weeks 4 to 6</span>
+        <span class="tag price">$350</span>
+      </div>
+      <p class="track-why">A board built to order is the most valuable thing your factory makes. Right now there is no way to order one on the website.</p>
+
+      <ol class="steps">
+        <li>
+          <h4>You give me the numbers</h4>
+          <p>Base price for each model, and what each option adds: construction, fin plug setup, fin system, resin tint, a name on the stringer. Only you can give me these. This phase cannot start without them.</p>
+        </li>
+        <li>
+          <h4>You give me the real lead time</h4>
+          <p>How many weeks from deposit to a finished board. The page will say this before checkout, not after.</p>
+        </li>
+        <li>
+          <h4>Build the picker</h4>
+          <p>Model first, then a size from that model's real run, then construction, fins and tail. There is a notes box for anything the customer wants to tell the shaper.</p>
+        </li>
+        <li>
+          <h4>Wire up live pricing</h4>
+          <p>The total changes as the customer picks options, so nobody gets a surprise at the end.</p>
+        </li>
+        <li>
+          <h4>Make the order print for the bay</h4>
+          <p>Every spec comes attached to the order. It prints on one sheet that goes straight to the shaping bay.</p>
+        </li>
+        <li>
+          <h4>Run test orders before it goes live</h4>
+          <p>I place real test orders all the way through. I check the spec sheet comes out right before any customer sees it.</p>
+        </li>
+      </ol>
+
+      <div class="payoff">
+        <div class="payoff-h">What this changes for you</div>
+        <ul>
+          <li>You start taking custom orders at eleven at night. Tom Neilson shows a price list from $1450 and takes orders on his website. Right now anyone who wants to order outside your shop hours has to go to a competitor.</li>
+          <li>The phone call goes away. So do the mistakes that come from writing specs down during one.</li>
+          <li>Money arrives before foam is cut, if you choose the deposit option.</li>
+          <li>It builds on Phase 2. The sizes the picker offers come from the model pages, which is why the catalog has to be right first.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="track">
+      <div class="track-head">
+        <span class="track-no">Phase 5</span>
+        <h3>Modern updates and front page video</h3>
+        <span class="tag when">Weeks 5 to 6</span>
+        <span class="tag price">$150</span>
+      </div>
+      <p class="track-why">Small, on purpose. You said you are not looking to change the site much, so nothing here moves your layout or your theme.</p>
+
+      <ol class="steps">
+        <li>
+          <h4>Add the video section to the front page</h4>
+          <p>Muted, looping, hosted on Shopify, with a still image behind it so the page never waits on it. About 10 to 20 seconds of the shaping floor.</p>
+        </li>
+        <li>
+          <h4>Tidy the type and spacing</h4>
+          <p>Sizes, spacing and buttons brought in line across the site. The pages keep their shape, they just stop looking uneven.</p>
+        </li>
+        <li>
+          <h4>Fix what Google reads first</h4>
+          <p>Your home page has no main heading at all. That, the page titles and the descriptions all get set properly.</p>
+        </li>
+        <li>
+          <h4>Speed pass</h4>
+          <p>Shrink the images, load them only when they are needed, and take out the scripts the site does not use. This matters more once there is video on the page.</p>
+        </li>
+      </ol>
+
+      <div class="payoff">
+        <div class="payoff-h">What this changes for you</div>
+        <ul>
+          <li>The first thing a visitor sees is a board being shaped in your factory. That is the one thing your competitors cannot copy.</li>
+          <li>The site feels current without you paying for a redesign you did not ask for.</li>
+          <li>Speed is what makes search and paid ads worth doing later. Adding video without a speed pass would make the site slower, not better.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top:26px">The order matters. Phase 3 has nothing to sort until the catalog in Phase 2 is real, and Phase 4 takes its sizes straight from the model pages Phase 2 builds. Running them in this order is what keeps the total at $1,650 instead of paying twice for the same work.</p>
+  </section>
+
+  <!-- ============ 5 ============ -->
+  <section id="marketing">
+    <div class="sec-head"><span class="idx">05</span><h2>Marketing, after launch</h2></div>
+    <p>Optional, and priced separately so you can decide after you have seen the work. On our call I said search takes at least six months to pay off. That is why the term is six months and not month to month. It does not work in three.</p>
+
+    <div class="retainer">
+      <div class="retainer-head">
+        <div>
+          <div class="eyebrow">Monthly retainer</div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:19px;margin-top:3px">Local search, content and social</div>
+        </div>
+        <div class="price">$450<small> / month</small></div>
+      </div>
+      <div class="retainer-body">
+        <ul>
+          <li>Google Business Profile claimed and built out properly</li>
+          <li>Address fixed across the directories that still list the old Cocoa Beach shop</li>
+          <li>Local search targeting Cape Canaveral, Cocoa Beach and Brevard</li>
+          <li>Two articles a month on the blog, which has never had a post published</li>
+          <li>Shaping floor video cut for Instagram Reels and YouTube</li>
+          <li>Email capture plus three automated sequences</li>
+          <li>Review generation from walk in customers</li>
+          <li>One report a month, in plain English</li>
+        </ul>
+        <p style="font-size:15.5px;color:var(--muted);margin-top:4px">Google Ads management can be added later, once there is enough sales data on the new store to aim it properly. Ad spend is paid by you directly to Google and is separate from this fee.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6 ============ -->
+  <section id="payment">
+    <div class="sec-head"><span class="idx">06</span><h2>Payment schedule</h2></div>
+    <div class="tw">
+      <table>
+        <thead>
+          <tr><th>Installment</th><th>Due</th><th class="r">Amount</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First &nbsp;<span style="color:var(--muted)" class="num">40%</span></td>
+            <td>On signing, which releases Phase 2<span class="sub">Phase 1 is already done by this point, at no charge</span></td>
+            <td class="amt r">$660.00</td>
+          </tr>
+          <tr>
+            <td>Second &nbsp;<span style="color:var(--muted)" class="num">40%</span></td>
+            <td>When the catalog and the store are both live<span class="sub">End of Phase 3</span></td>
+            <td class="amt r">$660.00</td>
+          </tr>
+          <tr>
+            <td>Third &nbsp;<span style="color:var(--muted)" class="num">20%</span></td>
+            <td>On launch, once Phases 4 and 5 are signed off<span class="sub">Board builder taking orders, video live</span></td>
+            <td class="amt r">$330.00</td>
+          </tr>
+          <tr class="total">
+            <td colspan="2">Total</td>
+            <td class="amt r">$1,650.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px">Invoices are payable within 14 days. Retainer months are invoiced on the first of each month, in advance. Payment through Fiverr as before, or by bank transfer, Wise or Payoneer if you prefer.</p>
+  </section>
+
+  <!-- ============ 7 ============ -->
+  <section id="terms">
+    <div class="sec-head"><span class="idx">07</span><h2>Terms and conditions</h2></div>
+    <ol class="terms">
+      <li><b>Revisions</b> Two rounds of revisions are included in each phase. Further rounds, or changes requested after a phase has been signed off, are billed at $35 per hour.</li>
+      <li><b>Apparel and hats</b> Phase 3 builds those two sections and makes them work, with one example product in each. Loading your clothing and hats, with prices, sizes and photos, is not included and is quoted separately once the item count is known.</li>
+      <li><b>Changes to scope</b> Anything outside what is written in section 02 is quoted in writing and agreed by email before work starts on it. Nothing gets added to an invoice you have not seen first.</li>
+      <li><b>Your responsibilities</b> Shopify collaborator access, the stock count for every board on your floor, product photos, custom board pricing, and answers to questions within five working days. The schedule assumes this and shifts if it slips.</li>
+      <li><b>Timeline</b> The eight weeks run from the day access is granted, not from the day this is signed. Delays caused by waiting on information, content or approvals move the finish date by the same amount.</li>
+      <li><b>Third party costs</b> Shopify fees, paid apps, fonts, stock imagery and advertising spend are yours and are paid directly to those providers. If something paid would genuinely serve the build better than a free alternative, I will tell you what it costs before anything is installed.</li>
+      <li><b>Ownership</b> Everything built for you, design files included, becomes your property once the final build invoice is paid. Nothing is held back and nothing is licensed to you on an ongoing basis.</li>
+      <li><b>Support after launch</b> Thirty days of free bug fixing from the launch date, covering anything built under this agreement that does not work as described. New features and content changes are not bug fixes.</li>
+      <li><b>No guarantee on results</b> Search rankings, traffic and sales cannot be guaranteed by anyone, and I will not pretend otherwise. What is guaranteed is the work described here, delivered to the standard described here.</li>
+      <li><b>Existing site</b> A full backup of your current theme is taken before anything is touched, and all development happens on a copy. Your live store keeps running as it is until you approve the switch.</li>
+      <li><b>Late payment</b> If an invoice passes fourteen days overdue, work pauses until it is settled. The schedule moves accordingly.</li>
+      <li><b>Cancellation</b> Either of us can end this with seven days written notice. Work completed up to that date is invoiced and payable. Any installment already paid against a phase in progress is not refundable, but you keep everything produced up to that point.</li>
+      <li><b>Retainer term</b> The marketing retainer runs for a minimum of six months, then continues month to month and can be cancelled with thirty days notice. It is entirely optional and is not a condition of the build work.</li>
+      <li><b>Confidentiality</b> Your business information, sales figures and supplier details stay private. I will ask separately before using the finished site as a portfolio piece.</li>
+      <li><b>Validity</b> This proposal and its pricing hold until 15 November 2026.</li>
+    </ol>
+  </section>
+
+  <!-- ============ 8 ============ -->
+  <section id="needs">
+    <div class="sec-head"><span class="idx">08</span><h2>What I need from you</h2></div>
+    <div class="needs">
+      <div><h3>Shopify access</h3><p>Collaborator access to the store. Nothing can start without it.</p></div>
+      <div><h3>Stock count</h3><p>How many of each board are actually on the floor right now, so inventory can be set correctly.</p></div>
+      <div><h3>Custom board pricing</h3><p>Base price per model and the cost of every option: construction, fin setup, tint, stringer name.</p></div>
+      <div><h3>The new models</h3><p>Which models to add to the catalog, with their size runs, so they can go in alongside the sixteen already there.</p></div>
+      <div><h3>Photos and video per model</h3><p>What you want on each model page. Video can be rough phone footage from the floor, it does not need to be produced.</p></div>
+      <div><h3>Lead time</h3><p>How long a custom order really takes from deposit to collection, so the page can say so honestly.</p></div>
+      <div><h3>The other websites</h3><p>The two or three sites you mentioned, and what you want changed on each. Those are quoted separately from this.</p></div>
+      <div><h3>A business email</h3><p>Your contact address is a gmail account. An address on your own domain builds trust and keeps your emails out of the spam folder.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 9 ============ -->
+  <section id="accept">
+    <div class="sec-head"><span class="idx">09</span><h2>Acceptance</h2></div>
+    <div class="sign">
+      <p style="margin-bottom:0">Signing below accepts the scope in section 02, the costs in section 04, the payment schedule in section 06 and the terms in section 07. The marketing retainer in section 05 is optional and is agreed separately.</p>
+      <p class="sign-note">Sign in the box with your mouse, or with your finger on a phone. Your signature stays in this browser and nobody else can see it. It is drawn onto the PDF when you download it.</p>
+      <div class="sign-grid">
+        <div class="sig">
+          <div class="sig-pad-wrap">
+            <canvas class="sig-pad" id="sig-client" aria-label="Signature box for Jim Leasure"></canvas>
+            <span class="sig-hint">Sign here</span>
+            <button type="button" class="sig-clear" data-pad="sig-client">Clear</button>
+          </div>
+          <div class="sig-lbl">Jim Leasure &middot; Quiet Flight Surfboards</div>
+          <label class="sig-date"><span>Date</span><input type="date" id="date-client"></label>
+        </div>
+        <div class="sig">
+          <div class="sig-pad-wrap">
+            <canvas class="sig-pad" id="sig-me" aria-label="Signature box for Rakibul Hasan"></canvas>
+            <span class="sig-hint">Sign here</span>
+            <button type="button" class="sig-clear" data-pad="sig-me">Clear</button>
+          </div>
+          <div class="sig-lbl">Rakibul Hasan</div>
+          <label class="sig-date"><span>Date</span><input type="date" id="date-me"></label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+  </div>
+
+  <footer>
+    <span>Rakibul Hasan &middot; Shopify Partner, Ecommerce UX</span>
+    <span class="num"><a href="mailto:somotomox@gmail.com">somotomox@gmail.com</a> &nbsp;&middot;&nbsp; <a href="tel:+8801754917061">+880 1754 917061</a></span>
+    <span class="num">Issued 15 Oct 2026</span>
+  </footer>
+
+</div>
+
+<button type="button" class="speak-pill" id="speakpill" hidden aria-live="polite">
+  <svg class="ico-play" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
+       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M8.5 2.5 4.8 5.6H2.2v4.8h2.6l3.7 3.1z" fill="currentColor" stroke="none"></path>
+    <path d="M11.3 5.6a3.4 3.4 0 0 1 0 4.8M13.4 3.4a6.4 6.4 0 0 1 0 9.2"></path>
+  </svg>
+  <svg class="ico-stop" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+    <rect x="3.2" y="3.2" width="9.6" height="9.6"></rect>
+  </svg>
+  <span id="speaklabel">Listen</span>
+</button>
+
+<script>
+/* signature pads. Strokes are kept as fractions of the pad, so they survive a
+   resize and can be redrawn as vectors into the PDF at any size. */
+(function () {
+  var pads = document.querySelectorAll('.sig-pad');
+  if (!pads.length) return;
+
+  var KEY = 'qf-proposal-signature';
+  var store = { strokes: {}, dates: {} };
+  window.__qfSign = store;
+
+  try {
+    var raw = localStorage.getItem(KEY);
+    if (raw) {
+      var parsed = JSON.parse(raw);
+      if (parsed && typeof parsed === 'object') {
+        store.strokes = parsed.strokes || {};
+        store.dates = parsed.dates || {};
+      }
+    }
+  } catch (e) { /* private window or bad data: start empty */ }
+
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) { /* ignore */ }
+  }
+
+  function setup(canvas) {
+    var id = canvas.id;
+    var wrap = canvas.parentNode;
+    var ctx = canvas.getContext('2d');
+    if (!store.strokes[id]) store.strokes[id] = [];
+    var current = null;
+
+    function sizeToBox() {
+      var dpr = window.devicePixelRatio || 1;
+      var w = canvas.clientWidth || 1;
+      var hgt = canvas.clientHeight || 1;
+      canvas.width = Math.round(w * dpr);
+      canvas.height = Math.round(hgt * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      render();
+    }
+
+    function render() {
+      var w = canvas.clientWidth, hgt = canvas.clientHeight;
+      ctx.clearRect(0, 0, w, hgt);
+      ctx.strokeStyle = getComputedStyle(document.body).color;
+      ctx.lineWidth = 1.8;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      var list = store.strokes[id];
+      for (var s = 0; s < list.length; s++) {
+        var pts = list[s];
+        if (pts.length < 2) continue;
+        ctx.beginPath();
+        ctx.moveTo(pts[0].x * w, pts[0].y * hgt);
+        for (var i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x * w, pts[i].y * hgt);
+        ctx.stroke();
+      }
+      wrap.classList.toggle('has-ink', list.length > 0);
+    }
+
+    function pointFrom(ev) {
+      var r = canvas.getBoundingClientRect();
+      return {
+        x: Math.min(Math.max((ev.clientX - r.left) / r.width, 0), 1),
+        y: Math.min(Math.max((ev.clientY - r.top) / r.height, 0), 1)
+      };
+    }
+
+    canvas.addEventListener('pointerdown', function (ev) {
+      ev.preventDefault();
+      canvas.setPointerCapture(ev.pointerId);
+      current = [pointFrom(ev)];
+      store.strokes[id].push(current);
+      wrap.classList.add('has-ink');
+    });
+
+    canvas.addEventListener('pointermove', function (ev) {
+      if (!current) return;
+      current.push(pointFrom(ev));
+      render();
+    });
+
+    function finish() {
+      if (!current) return;
+      if (current.length < 2) store.strokes[id].pop();   // a stray tap is not a stroke
+      current = null;
+      render();
+      save();
+    }
+    canvas.addEventListener('pointerup', finish);
+    canvas.addEventListener('pointercancel', finish);
+    canvas.addEventListener('pointerleave', finish);
+
+    var clearBtn = wrap.querySelector('.sig-clear');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function () {
+        store.strokes[id] = [];
+        render();
+        save();
+      });
+    }
+
+    window.addEventListener('resize', sizeToBox);
+    sizeToBox();
+  }
+
+  for (var i = 0; i < pads.length; i++) setup(pads[i]);
+
+  // dates
+  var dateInputs = document.querySelectorAll('.sig-date input');
+  for (var d = 0; d < dateInputs.length; d++) {
+    (function (input) {
+      if (store.dates[input.id]) input.value = store.dates[input.id];
+      input.addEventListener('change', function () {
+        store.dates[input.id] = input.value;
+        save();
+      });
+    })(dateInputs[d]);
+  }
+})();
+
+/* read aloud: select any text, a Listen button appears above the selection.
+   While it reads, the current word is marked in #e9ff32.
+
+   Two things here are deliberate:
+   - Local voices are preferred. Chrome does not report word boundaries for its
+     network voices, so picking one of those means no word tracking at all.
+   - The mark is a real <span> wrapped around each word, restored when reading
+     stops. The CSS Custom Highlight API is cleaner but is not everywhere yet.
+   If the engine reports no boundaries, progress is estimated from elapsed time
+   so the mark still follows along. */
+(function () {
+  var pill = document.getElementById('speakpill');
+  var labelEl = document.getElementById('speaklabel');
+  if (!pill) return;
+
+  var synth = window.speechSynthesis;
+  if (!synth || typeof window.SpeechSynthesisUtterance !== 'function') return;  // unsupported: never shown
+
+  var CHARS_PER_SEC = 15;    // rough speaking pace, only used when boundaries are missing
+
+  var pendingRange = null;
+  var playing = false;
+  var voice = null;
+  var settle = null;
+  var words = [];            // [{node, start, end, text}] in reading order
+  var spans = [];            // the wrappers, same order
+  var chunks = [];
+  var current = -1;
+  var estTimer = null;
+
+  var VOICE_KEY = 'qf-proposal-voice';
+  var voiceSel = document.getElementById('voicepick');
+  var voiceCtl = document.getElementById('voicectl');
+  var chosenURI = null;
+  try { chosenURI = localStorage.getItem(VOICE_KEY); } catch (e) { chosenURI = null; }
+
+  function autoPick(vs) {
+    var en = vs.filter(function (v) { return /^en/i.test(v.lang); });
+    var us = en.filter(function (v) { return /^en[-_]US/i.test(v.lang); });
+    // local voices first: they are the ones that report word boundaries
+    return us.filter(function (v) { return v.localService; })[0] ||
+           en.filter(function (v) { return v.localService; })[0] ||
+           us[0] || en[0] || vs[0] || null;
+  }
+
+  function buildVoiceList() {
+    var vs = [];
+    try { vs = synth.getVoices() || []; } catch (e) { vs = []; }
+    if (!vs.length) return;                 // some browsers fill this in late
+
+    voice = (chosenURI && vs.filter(function (v) { return v.voiceURI === chosenURI; })[0]) || autoPick(vs);
+    if (!voiceSel) return;
+
+    var en = vs.filter(function (v) { return /^en/i.test(v.lang); });
+    var rest = vs.filter(function (v) { return !/^en/i.test(v.lang); });
+    var ordered = en.concat(rest);          // English first, then everything else
+
+    voiceSel.textContent = '';
+    var groups = [
+      ['On this device (follows words)', ordered.filter(function (v) { return v.localService; })],
+      ['Online (may not follow words)', ordered.filter(function (v) { return !v.localService; })]
+    ];
+    for (var g = 0; g < groups.length; g++) {
+      if (!groups[g][1].length) continue;
+      var og = document.createElement('optgroup');
+      og.label = groups[g][0];
+      for (var i = 0; i < groups[g][1].length; i++) {
+        var v = groups[g][1][i];
+        var opt = document.createElement('option');
+        opt.value = v.voiceURI;
+        opt.textContent = v.name + '  (' + v.lang + ')';
+        if (voice && v.voiceURI === voice.voiceURI) opt.selected = true;
+        og.appendChild(opt);
+      }
+      voiceSel.appendChild(og);
+    }
+    if (voiceCtl) voiceCtl.hidden = false;
+  }
+
+  buildVoiceList();
+  try { synth.addEventListener('voiceschanged', buildVoiceList); } catch (e) { synth.onvoiceschanged = buildVoiceList; }
+
+  if (voiceSel) {
+    voiceSel.addEventListener('change', function () {
+      var vs = [];
+      try { vs = synth.getVoices() || []; } catch (e) { vs = []; }
+      var picked = vs.filter(function (v) { return v.voiceURI === voiceSel.value; })[0];
+      if (!picked) return;
+      voice = picked;
+      chosenURI = picked.voiceURI;          // a new voice takes effect from the next sentence
+      try { localStorage.setItem(VOICE_KEY, chosenURI); } catch (e) { /* ignore */ }
+    });
+  }
+
+  function setPlaying(on) {
+    playing = on;
+    pill.classList.toggle('is-playing', on);
+    labelEl.textContent = on ? 'Stop' : 'Listen';
+    pill.setAttribute('aria-label', on ? 'Stop reading' : 'Read the selected text aloud');
+  }
+
+  function hide() { pill.hidden = true; }
+
+  function reduceMotion() {
+    return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  }
+
+  // --- word map -------------------------------------------------------------
+  // Every word inside the range, with its text node and offsets. The spoken
+  // string is built from this same list, so a boundary maps back to one word.
+  function collectWords(range) {
+    var out = [];
+    var root = range.commonAncestorContainer;
+    if (root.nodeType === 3) root = root.parentNode;
+    if (!root) return out;
+
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+    var n;
+    while ((n = walker.nextNode())) {
+      var value = n.nodeValue;
+      if (!value) continue;
+      var touches = false;
+      try { touches = range.intersectsNode(n); } catch (e) { touches = false; }
+      if (!touches) continue;
+
+      var from = (n === range.startContainer) ? range.startOffset : 0;
+      var to = (n === range.endContainer) ? range.endOffset : value.length;
+      if (to <= from) continue;
+
+      var slice = value.slice(from, to);
+      var re = /\S+/g, m;
+      while ((m = re.exec(slice))) {
+        out.push({ node: n, start: from + m.index, end: from + m.index + m[0].length, text: m[0] });
+      }
+    }
+    return out;
+  }
+
+  // Wrap each word in its own span. Words in the same text node are split from
+  // the end backwards, so the earlier offsets stay valid as we go.
+  function wrapWords(list) {
+    var byNode = [];
+    var seen = [];
+    for (var i = 0; i < list.length; i++) {
+      var idx = seen.indexOf(list[i].node);
+      if (idx === -1) { seen.push(list[i].node); byNode.push([]); idx = seen.length - 1; }
+      byNode[idx].push({ w: list[i], i: i });
+    }
+
+    var made = new Array(list.length);
+    for (var g = 0; g < byNode.length; g++) {
+      var items = byNode[g].slice().sort(function (a, b) { return b.w.start - a.w.start; });
+      var head = seen[g];
+      for (var k = 0; k < items.length; k++) {
+        var w = items[k].w;
+        try {
+          head.splitText(w.end);                 // tail after the word
+          var wordNode = head.splitText(w.start); // the word itself
+          var span = document.createElement('span');
+          span.className = 'rw';
+          head.parentNode.insertBefore(span, wordNode);
+          span.appendChild(wordNode);
+          made[items[k].i] = span;
+        } catch (e) { /* skip this word, keep going */ }
+      }
+    }
+    return made;
+  }
+
+  function unwrapWords() {
+    var touched = [];
+    for (var i = 0; i < spans.length; i++) {
+      var s = spans[i];
+      if (!s || !s.parentNode) continue;
+      var parent = s.parentNode;
+      while (s.firstChild) parent.insertBefore(s.firstChild, s);
+      parent.removeChild(s);
+      if (touched.indexOf(parent) === -1) touched.push(parent);
+    }
+    for (var t = 0; t < touched.length; t++) {
+      try { touched[t].normalize(); } catch (e) { /* ignore */ }
+    }
+    spans = [];
+    current = -1;
+  }
+
+  function markWord(i) {
+    if (i === current) return;
+    if (spans[current]) spans[current].classList.remove('rw-on');
+    current = i;
+    var el = spans[i];
+    if (!el) return;
+    el.classList.add('rw-on');
+
+    var rect = el.getBoundingClientRect();
+    if (rect.bottom < 64 || rect.top > window.innerHeight - 48) {
+      el.scrollIntoView({ block: 'center', behavior: reduceMotion() ? 'auto' : 'smooth' });
+    }
+  }
+
+  // --- utterance groups -----------------------------------------------------
+  function buildChunks(list) {
+    var res = [], buf = [], offsets = [], len = 0, first = 0;
+    for (var i = 0; i < list.length; i++) {
+      var w = list[i].text;
+      if (buf.length && len + 1 + w.length > 220) {
+        res.push({ text: buf.join(' '), first: first, offsets: offsets });
+        buf = []; offsets = []; len = 0; first = i;
+      }
+      offsets.push(len ? len + 1 : 0);
+      len = len ? len + 1 + w.length : w.length;
+      buf.push(w);
+    }
+    if (buf.length) res.push({ text: buf.join(' '), first: first, offsets: offsets });
+    return res;
+  }
+
+  function wordAtChar(chunk, ch) {
+    var k = 0;
+    while (k + 1 < chunk.offsets.length && chunk.offsets[k + 1] <= ch) k++;
+    return k;
+  }
+
+  function stopEstimator() {
+    if (estTimer) { clearInterval(estTimer); estTimer = null; }
+  }
+
+  function stop() {
+    stopEstimator();
+    try { synth.cancel(); } catch (e) { /* ignore */ }
+    setPlaying(false);
+    unwrapWords();
+  }
+
+  function speak() {
+    try { synth.cancel(); } catch (e) { /* ignore */ }
+    if (!chunks.length) { setPlaying(false); unwrapWords(); return; }
+    var ci = 0;
+
+    (function next() {
+      if (!playing || ci >= chunks.length) { stopEstimator(); setPlaying(false); unwrapWords(); return; }
+      var chunk = chunks[ci++];
+      var u = new window.SpeechSynthesisUtterance(chunk.text);
+      if (voice) u.voice = voice;
+      u.rate = 0.98;
+      u.pitch = 1;
+
+      var sawBoundary = false;
+
+      u.onstart = function () {
+        var t0 = Date.now();
+        stopEstimator();
+        // if the engine never reports a boundary, walk the words on a timer instead
+        estTimer = setInterval(function () {
+          if (sawBoundary || !playing) { stopEstimator(); return; }
+          var ch = ((Date.now() - t0) / 1000) * CHARS_PER_SEC;
+          if (ch > chunk.text.length) ch = chunk.text.length;
+          markWord(chunk.first + wordAtChar(chunk, ch));
+        }, 90);
+      };
+
+      u.onboundary = function (ev) {
+        if (!playing || ev.name === 'sentence') return;
+        sawBoundary = true;
+        stopEstimator();
+        markWord(chunk.first + wordAtChar(chunk, ev.charIndex || 0));
+      };
+
+      u.onend = function () { stopEstimator(); next(); };
+
+      u.onerror = function () {
+        stopEstimator();
+        setPlaying(false);
+        unwrapWords();
+        labelEl.textContent = 'Audio blocked';
+        setTimeout(function () { if (!playing) labelEl.textContent = 'Listen'; }, 2200);
+      };
+
+      try { synth.speak(u); } catch (e) { stopEstimator(); setPlaying(false); unwrapWords(); }
+    })();
+  }
+
+  // --- the pill -------------------------------------------------------------
+  function show() {
+    if (playing) return;                        // a queued check must not tear down the Stop button
+    var sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) { hide(); return; }
+
+    var text = sel.toString().replace(/\s+/g, ' ').trim();
+    if (text.length < 2) { hide(); return; }
+    if (pill.contains(sel.anchorNode) || pill.contains(sel.focusNode)) return;
+
+    var range = sel.getRangeAt(0);
+    var rect = range.getBoundingClientRect();
+    if (!rect || (!rect.width && !rect.height)) { hide(); return; }
+
+    pendingRange = range.cloneRange();
+    pill.hidden = false;
+
+    var x = Math.min(Math.max(rect.left + rect.width / 2, 70), window.innerWidth - 70);
+    var y = rect.top;
+    if (y < 56) y = rect.bottom + 46;          // selection near the top: drop the pill below it
+    pill.style.left = x + 'px';
+    pill.style.top = y + 'px';
+  }
+
+  document.addEventListener('selectionchange', function () {
+    if (playing) return;
+    clearTimeout(settle);
+    settle = setTimeout(show, 160);
+  });
+
+  document.addEventListener('mousedown', function (ev) {
+    if (!pill.contains(ev.target)) hide();
+  });
+
+  // keep the selection alive when the pill itself is clicked
+  pill.addEventListener('mousedown', function (ev) { ev.preventDefault(); });
+
+  pill.addEventListener('click', function () {
+    if (playing) { stop(); return; }
+    if (!pendingRange) return;
+
+    words = collectWords(pendingRange);
+    if (!words.length) return;
+    chunks = buildChunks(words);
+
+    setPlaying(true);
+    spans = wrapWords(words);
+
+    // the running yellow mark replaces the browser's own selection colour
+    var sel = window.getSelection();
+    if (sel) { try { sel.removeAllRanges(); } catch (e) { /* ignore */ } }
+
+    speak();
+  });
+
+  // reading deliberately continues when the tab loses focus, so you can switch
+  // away and keep listening. Closing the page still stops it.
+
+  window.addEventListener('beforeunload', function () { try { synth.cancel(); } catch (e) {} });
+  window.addEventListener('scroll', function () { if (!playing) hide(); }, { passive: true });
+
+  setPlaying(false);
+})();
+
+/* theme switch: Auto follows the viewer's own setting, Light and Dark override it */
+(function () {
+  var root = document.documentElement;
+  var ctl = document.getElementById('themectl');
+  if (!ctl) return;
+
+  var hostTheme = root.getAttribute('data-theme');   // what the viewer's app stamped, if anything
+  var KEY = 'qf-proposal-theme';
+
+  function apply(mode) {
+    if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode);
+    else if (hostTheme) root.setAttribute('data-theme', hostTheme);
+    else root.removeAttribute('data-theme');
+
+    var btns = ctl.querySelectorAll('button');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-mode') === mode ? 'true' : 'false');
+    }
+  }
+
+  var saved = 'auto';
+  try { saved = localStorage.getItem(KEY) || 'auto'; } catch (e) { saved = 'auto'; }
+  apply(saved);
+
+  ctl.addEventListener('click', function (ev) {
+    var btn = ev.target.closest('button[data-mode]');
+    if (!btn) return;
+    var mode = btn.getAttribute('data-mode');
+    apply(mode);
+    try { localStorage.setItem(KEY, mode); } catch (e) { /* private window, ignore */ }
+  });
+})();
+
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.tracker a'));
+  var bar = document.getElementById('tkbar');
+  var targets = links.map(function (a) {
+    return document.getElementById(a.getAttribute('href').slice(1));
+  });
+
+  function paint() {
+    var currentId = null;
+    for (var i = 0; i < targets.length; i++) {
+      var t = targets[i];
+      if (t && t.getBoundingClientRect().top <= 140) currentId = t.id;
+    }
+    if (!currentId && targets[0]) currentId = targets[0].id;
+
+    var active = null;
+    links.forEach(function (a) {
+      var on = a.getAttribute('href').slice(1) === currentId;
+      a.classList.toggle('on', on);
+      if (on) active = a;
+    });
+
+    // keep the active chip in view on the mobile horizontal strip
+    if (active && window.innerWidth <= 900) {
+      var strip = active.closest('ol');
+      if (strip && strip.scrollWidth > strip.clientWidth) {
+        var l = active.offsetLeft, r = l + active.offsetWidth;
+        if (l < strip.scrollLeft) strip.scrollLeft = l - 12;
+        else if (r > strip.scrollLeft + strip.clientWidth) strip.scrollLeft = r - strip.clientWidth + 12;
+      }
+    }
+
+    if (bar) {
+      var d = document.documentElement;
+      var span = d.scrollHeight - d.clientHeight;
+      var pct = span > 0 ? d.scrollTop / span : 0;
+      bar.style.transform = 'scaleX(' + Math.min(1, Math.max(0, pct)) + ')';
+    }
+  }
+
+  var queued = false;
+  function onScroll() {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(function () { queued = false; paint(); });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  paint();
+})();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  var INK   = [20, 24, 26];
+  var MUTED = [74, 86, 84];
+  var ACCENT= [14, 79, 74];
+  var AMBER = [168, 95, 20];
+  var FLAG  = [140, 47, 29];
+  var RULE  = [188, 196, 190];
+  var SUNK  = [232, 236, 230];
+
+  var PW = 612, PH = 792;
+  var ML = 56, MR = 56, MT = 58, MB = 62;
+  var CW = PW - ML - MR;
+
+  var doc, y;
+
+  function txt(el) { return (el.textContent || '').replace(/\s+/g, ' ').trim(); }
+
+  function setFont(fam, style, size, color) {
+    doc.setFont(fam, style);
+    doc.setFontSize(size);
+    doc.setTextColor(color[0], color[1], color[2]);
+  }
+
+  function need(h) {
+    if (y + h > PH - MB) { doc.addPage(); y = MT; }
+  }
+
+  function para(str, o) {
+    o = o || {};
+    var size = o.size || 10.5;
+    var lead = o.lead || 1.46;
+    var indent = o.indent || 0;
+    setFont(o.fam || 'times', o.style || 'normal', size, o.color || INK);
+    var lines = doc.splitTextToSize(str, CW - indent - (o.trim || 0));
+    var lh = size * lead;
+    for (var i = 0; i < lines.length; i++) {
+      need(lh);
+      doc.text(lines[i], ML + indent, y);
+      y += lh;
+    }
+    y += (o.after === undefined ? 7 : o.after);
+  }
+
+  function hrule(color, w, gapBefore, gapAfter) {
+    y += (gapBefore || 0);
+    need(4);
+    doc.setDrawColor(color[0], color[1], color[2]);
+    doc.setLineWidth(w || 0.5);
+    doc.line(ML, y, PW - MR, y);
+    y += (gapAfter || 0);
+  }
+
+  function label(str, color, size) {
+    setFont('helvetica', 'bold', size || 7.5, color || MUTED);
+    need(11);
+    doc.text(str.toUpperCase(), ML, y, { charSpace: 0.8 });
+    y += 11;
+  }
+
+  // ---------- cover ----------
+  function cover() {
+    y = MT + 6;
+    label('Proposal  ·  15 October 2026', MUTED, 8);
+    y += 26;
+
+    setFont('helvetica', 'bold', 34, INK);
+    doc.text('QUIET FLIGHT', ML, y); y += 34;
+    doc.text('SURFBOARDS', ML, y); y += 26;
+
+    para('Splitting the catalog off from the store, building the six store sections, and giving every board model its own page with photos and video.',
+         { size: 12, color: MUTED, after: 18 });
+
+    hrule(RULE, 0.8, 4, 20);
+
+    var facts = [
+      ['Prepared for', 'Jim Leasure, Quiet Flight Surfboards\n377 Imperial Blvd C-1, Cape Canaveral FL'],
+      ['Prepared by', 'Rakibul Hasan\nShopify Partner, Ecommerce UX\nsomotomox@gmail.com\n+880 1754 917061'],
+      ['Valid until', '15 November 2026']
+    ];
+    var colW = CW / 3;
+    var top = y;
+    var maxY = y;
+    for (var i = 0; i < facts.length; i++) {
+      var x = ML + i * colW;
+      var yy = top;
+      setFont('helvetica', 'bold', 7.5, MUTED);
+      doc.text(facts[i][0].toUpperCase(), x, yy, { charSpace: 0.8 });
+      yy += 13;
+      setFont('times', 'normal', 10, INK);
+      var ls = doc.splitTextToSize(facts[i][1], colW - 14);
+      for (var j = 0; j < ls.length; j++) { doc.text(ls[j], x, yy); yy += 13; }
+      if (yy > maxY) maxY = yy;
+    }
+    y = maxY + 10;
+
+    hrule(RULE, 0.8, 0, 26);
+
+    var nums = [
+      ['Build total', '$1,650', 'One time, paid in three installments', INK],
+      ['Time to launch', '6 weeks', 'From the day access is granted', INK],
+      ['Marketing, after launch', '$450 / mo', 'Six month minimum, optional', INK],
+      ['Audit and urgent fixes', '$0', 'The audit and the ordering fix, no charge', ACCENT]
+    ];
+    for (var k = 0; k < nums.length; k++) {
+      need(46);
+      doc.setFillColor(SUNK[0], SUNK[1], SUNK[2]);
+      doc.rect(ML, y - 2, CW, 42, 'F');
+      setFont('helvetica', 'bold', 7.5, MUTED);
+      doc.text(nums[k][0].toUpperCase(), ML + 12, y + 12, { charSpace: 0.8 });
+      setFont('courier', 'bold', 15, nums[k][3]);
+      doc.text(nums[k][1], PW - MR - 12, y + 16, { align: 'right' });
+      setFont('times', 'normal', 9, MUTED);
+      doc.text(nums[k][2], ML + 12, y + 30);
+      y += 48;
+    }
+
+    doc.addPage();
+    y = MT;
+  }
+
+  // ---------- blocks ----------
+  function sectionHead(el) {
+    var idx = el.querySelector('.idx');
+    var h2 = el.querySelector('h2');
+    need(62);
+    y += 10;
+    doc.setDrawColor(INK[0], INK[1], INK[2]);
+    doc.setLineWidth(1.4);
+    doc.line(ML, y, PW - MR, y);
+    y += 16;
+    setFont('courier', 'normal', 8.5, MUTED);
+    doc.text(idx ? txt(idx) : '', ML, y);
+    setFont('helvetica', 'bold', 17, INK);
+    doc.text(h2 ? txt(h2).toUpperCase() : '', ML + 26, y + 1);
+    y += 22;
+  }
+
+  function findingBlock(el) {
+    var h3 = el.querySelector('h3');
+    need(40);
+    if (h3) {
+      doc.setFillColor(FLAG[0], FLAG[1], FLAG[2]);
+      doc.rect(ML, y - 8, 2.5, 11, 'F');
+      setFont('helvetica', 'bold', 11.5, INK);
+      var hl = doc.splitTextToSize(txt(h3), CW - 12);
+      for (var i = 0; i < hl.length; i++) { need(15); doc.text(hl[i], ML + 12, y); y += 15; }
+      y += 4;
+    }
+    var kids = el.children;
+    for (var k = 0; k < kids.length; k++) {
+      if (kids[k].tagName === 'P') para(txt(kids[k]), { indent: 12, after: 8 });
+      else if (kids[k].classList.contains('record')) recordBlock(kids[k]);
+    }
+    y += 8;
+  }
+
+  function recordBlock(el) {
+    var cap = el.querySelector('.cap');
+    var clone = el.cloneNode(true);
+    var c2 = clone.querySelector('.cap');
+    if (c2) c2.remove();
+    var lines = (clone.textContent || '').replace(/ /g, ' ').split('\n')
+                 .map(function (s) { return s.replace(/\s+$/, ''); })
+                 .filter(function (s) { return s.trim().length; });
+    var h = 16 + lines.length * 12 + 14;
+    need(h);
+    doc.setFillColor(SUNK[0], SUNK[1], SUNK[2]);
+    doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+    doc.setLineWidth(0.5);
+    doc.rect(ML + 12, y - 4, CW - 12, h - 6, 'FD');
+    var yy = y + 10;
+    if (cap) {
+      setFont('helvetica', 'bold', 7, MUTED);
+      doc.text(txt(cap).toUpperCase(), ML + 24, yy, { charSpace: 0.7 });
+      yy += 13;
+    }
+    setFont('courier', 'normal', 8.5, MUTED);
+    for (var i = 0; i < lines.length; i++) { doc.text(lines[i], ML + 24, yy); yy += 12; }
+    y += h + 4;
+  }
+
+  function phaseBlock(el) {
+    need(76);
+    hrule(RULE, 0.5, 6, 16);
+    var no = el.querySelector('.phase-no');
+    var h3 = el.querySelector('.phase-top h3');
+    var tags = el.querySelectorAll('.phase-top .tag');
+    setFont('courier', 'bold', 8.5, MUTED);
+    doc.text(no ? txt(no).toUpperCase() : '', ML, y);
+    var tagStr = [];
+    for (var t = 0; t < tags.length; t++) tagStr.push(txt(tags[t]));
+    if (tagStr.length) {
+      setFont('courier', 'normal', 9, tags[0].classList.contains('free') ? ACCENT : INK);
+      doc.text(tagStr.join('    '), PW - MR, y, { align: 'right' });
+    }
+    y += 16;
+    setFont('helvetica', 'bold', 14, INK);
+    doc.text(h3 ? txt(h3) : '', ML, y);
+    y += 16;
+    var why = el.querySelector('.why');
+    if (why) para(txt(why), { style: 'italic', color: MUTED, size: 10, after: 8 });
+    var ul = el.querySelector('ul');
+    if (ul) bullets(ul);
+    var note = el.querySelector('.note');
+    if (note) noteBlock(note);
+    y += 6;
+  }
+
+  function bullets(ul) {
+    var lis = ul.children;
+    for (var i = 0; i < lis.length; i++) {
+      setFont('times', 'normal', 10.5, INK);
+      var lines = doc.splitTextToSize(txt(lis[i]), CW - 16);
+      for (var j = 0; j < lines.length; j++) {
+        need(15);
+        if (j === 0) {
+          doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+          doc.setLineWidth(0.7);
+          doc.line(ML, y - 3.5, ML + 6, y - 3.5);
+        }
+        setFont('times', 'normal', 10.5, INK);
+        doc.text(lines[j], ML + 16, y);
+        y += 15;
+      }
+      y += 2;
+    }
+    y += 6;
+  }
+
+  function noteBlock(el) {
+    var p = el.querySelector('p');
+    var s = p ? txt(p) : txt(el);
+    setFont('times', 'normal', 9.5, INK);
+    var lines = doc.splitTextToSize(s, CW - 26);
+    var h = lines.length * 13 + 16;
+    need(h + 6);
+    doc.setFillColor(250, 244, 233);
+    doc.rect(ML, y - 4, CW, h, 'F');
+    doc.setFillColor(AMBER[0], AMBER[1], AMBER[2]);
+    doc.rect(ML, y - 4, 2.5, h, 'F');
+    var yy = y + 9;
+    for (var i = 0; i < lines.length; i++) { doc.text(lines[i], ML + 14, yy); yy += 13; }
+    y += h + 10;
+  }
+
+  function ganttBlock(el) {
+    var rows = el.querySelectorAll('.gantt-row');
+    var labW = 120;
+    var trackX = ML + labW;
+    var trackW = CW - labW;
+    var weeks = Math.max(1, el.querySelectorAll('.gantt-head span').length - 1);
+    var cell = trackW / weeks;
+    need(rows.length * 20 + 50);
+
+    setFont('helvetica', 'bold', 7.5, MUTED);
+    doc.text('WEEK', ML, y, { charSpace: 0.8 });
+    setFont('courier', 'normal', 8, MUTED);
+    for (var w = 0; w < weeks; w++) {
+      doc.text(String(w + 1), trackX + cell * w + cell / 2, y, { align: 'center' });
+    }
+    y += 6;
+    doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+    doc.setLineWidth(0.5);
+    doc.line(ML, y, PW - MR, y);
+    y += 14;
+
+    for (var i = 0; i < rows.length; i++) {
+      var lbl = rows[i].querySelector('.lbl');
+      var bar = rows[i].querySelector('.bar');
+      var holder = bar ? bar.parentElement : null;
+      var gc = holder ? (holder.getAttribute('style') || '') : '';
+      var m = gc.match(/grid-column\s*:\s*(\d+)\s*\/\s*(\d+)/);
+      setFont('helvetica', 'bold', 9.5, INK);
+      doc.text(lbl ? txt(lbl) : '', ML, y + 7);
+
+      doc.setDrawColor(238, 240, 236);
+      doc.setLineWidth(0.4);
+      for (var c = 0; c < weeks; c++) doc.line(trackX + cell * c, y - 2, trackX + cell * c, y + 12);
+
+      if (m) {
+        var s = parseInt(m[1], 10) - 2;
+        var e = parseInt(m[2], 10) - 2;
+        var x = trackX + s * cell;
+        var wdt = (e - s) * cell - 3;
+        var free = bar.classList.contains('is-free');
+        var mkt = bar.classList.contains('is-mkt');
+        if (mkt) {
+          doc.setFillColor(250, 244, 233);
+          doc.setDrawColor(AMBER[0], AMBER[1], AMBER[2]);
+          doc.setLineWidth(0.6);
+          doc.rect(x, y, wdt, 9, 'FD');
+        } else if (free) {
+          doc.setFillColor(233, 240, 239);
+          doc.setDrawColor(ACCENT[0], ACCENT[1], ACCENT[2]);
+          doc.setLineWidth(0.6);
+          doc.rect(x, y, wdt, 9, 'FD');
+        } else {
+          doc.setFillColor(ACCENT[0], ACCENT[1], ACCENT[2]);
+          doc.rect(x, y, wdt, 9, 'F');
+        }
+      }
+      y += 20;
+    }
+    y += 4;
+    var foot = el.querySelector('.gantt-foot');
+    if (foot) para(txt(foot), { size: 9.5, color: MUTED, after: 10 });
+  }
+
+  function tableBlock(table) {
+    if (!table) return;
+    var headCells = table.querySelectorAll('thead th');
+    var bodyRows = table.querySelectorAll('tbody tr');
+    var nCols = headCells.length;
+    var amtW = 92;
+    var midW = nCols === 3 ? 230 : 0;
+    var firstW = CW - amtW - midW;
+
+    function colX(i) {
+      if (i === 0) return ML;
+      if (nCols === 3 && i === 1) return ML + firstW;
+      return PW - MR;
+    }
+    function colW(i) {
+      if (i === 0) return firstW - 12;
+      if (nCols === 3 && i === 1) return midW - 12;
+      return amtW;
+    }
+
+    need(56);
+    setFont('helvetica', 'bold', 7.5, MUTED);
+    for (var c = 0; c < nCols; c++) {
+      var isLast = c === nCols - 1;
+      doc.text(txt(headCells[c]).toUpperCase(), colX(c), y, isLast ? { align: 'right', charSpace: 0.8 } : { charSpace: 0.8 });
+    }
+    y += 7;
+    doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+    doc.setLineWidth(0.8);
+    doc.line(ML, y, PW - MR, y);
+    y += 15;
+
+    for (var r = 0; r < bodyRows.length; r++) {
+      var row = bodyRows[r];
+      var isTotal = row.classList.contains('total');
+      var cells = row.children;
+      var rowTop = y;
+      var maxH = 0;
+
+      if (isTotal) {
+        y += 6;
+        doc.setDrawColor(INK[0], INK[1], INK[2]);
+        doc.setLineWidth(1.2);
+        doc.line(ML, y - 8, PW - MR, y - 8);
+        rowTop = y;
+      }
+
+      var ci = 0;
+      for (var q = 0; q < cells.length; q++) {
+        var cell = cells[q];
+        var span = parseInt(cell.getAttribute('colspan') || '1', 10);
+        var isLastCol = (ci + span) >= nCols;
+        var sub = cell.querySelector('.sub');
+        var main = cell.cloneNode(true);
+        var subClone = main.querySelector('.sub');
+        if (subClone) subClone.remove();
+        var mainStr = txt(main);
+
+        var yy = rowTop;
+        setFont(isLastCol ? 'courier' : 'helvetica', isTotal ? 'bold' : 'normal', isTotal ? 11.5 : 10, INK);
+        if (isLastCol && !isTotal) setFont('courier', 'normal', 10, /No charge/i.test(mainStr) ? ACCENT : INK);
+        if (!isLastCol && !isTotal) setFont('times', 'normal', 10.5, INK);
+
+        var w = isLastCol ? amtW : colW(ci);
+        var lines = doc.splitTextToSize(mainStr, w);
+        for (var L = 0; L < lines.length; L++) {
+          doc.text(lines[L], isLastCol ? PW - MR : colX(ci), yy, isLastCol ? { align: 'right' } : undefined);
+          yy += 14;
+        }
+        if (sub) {
+          setFont('times', 'italic', 9, MUTED);
+          var sl = doc.splitTextToSize(txt(sub), w);
+          for (var S = 0; S < sl.length; S++) { doc.text(sl[S], colX(ci), yy); yy += 11; }
+        }
+        if (yy - rowTop > maxH) maxH = yy - rowTop;
+        ci += span;
+      }
+
+      y = rowTop + Math.max(maxH, 16) + 8;
+      if (!isTotal) {
+        doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+        doc.setLineWidth(0.4);
+        doc.line(ML, y - 6, PW - MR, y - 6);
+      }
+      need(40);
+    }
+    y += 8;
+  }
+
+  function retainerBlock(el) {
+    var title = el.querySelector('.retainer-head div div:last-child');
+    var price = el.querySelector('.price');
+    need(60);
+    doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+    doc.setLineWidth(0.8);
+    doc.rect(ML, y - 4, CW, 40);
+    setFont('helvetica', 'bold', 7.5, MUTED);
+    doc.text('MONTHLY RETAINER', ML + 12, y + 10, { charSpace: 0.8 });
+    setFont('helvetica', 'bold', 11.5, INK);
+    doc.text(title ? txt(title) : 'Local search, content and social', ML + 12, y + 26);
+    setFont('courier', 'bold', 14, INK);
+    doc.text(price ? txt(price).replace(/\s+/g, ' ') : '', PW - MR - 12, y + 22, { align: 'right' });
+    y += 52;
+    var ul = el.querySelector('ul');
+    if (ul) bullets(ul);
+    var tail = el.querySelectorAll('.retainer-body p');
+    for (var i = 0; i < tail.length; i++) para(txt(tail[i]), { size: 9.5, color: MUTED, after: 8 });
+  }
+
+  function termsBlock(ol) {
+    var lis = ol.children;
+    for (var i = 0; i < lis.length; i++) {
+      var b = lis[i].querySelector('b');
+      var lead = b ? txt(b) : '';
+      var clone = lis[i].cloneNode(true);
+      var bc = clone.querySelector('b');
+      if (bc) bc.remove();
+      var rest = txt(clone);
+      var n = (i + 1) < 10 ? '0' + (i + 1) : String(i + 1);
+
+      setFont('times', 'normal', 10.5, INK);
+      var startY = y;
+      need(28);
+      setFont('courier', 'normal', 8.5, MUTED);
+      doc.text(n, ML, y);
+
+      setFont('helvetica', 'bold', 9.5, INK);
+      var leadW = doc.getTextWidth(lead.toUpperCase() + '  ');
+      doc.text(lead.toUpperCase(), ML + 26, y, { charSpace: 0.4 });
+
+      setFont('times', 'normal', 10.5, INK);
+      var avail = CW - 26 - leadW;
+      var words = rest.split(' ');
+      var firstLine = '';
+      while (words.length && doc.getTextWidth(firstLine + words[0] + ' ') < avail) {
+        firstLine += words.shift() + ' ';
+      }
+      doc.text(firstLine.trim(), ML + 26 + leadW, y);
+      y += 14;
+      if (words.length) {
+        var restLines = doc.splitTextToSize(words.join(' '), CW - 26);
+        for (var j = 0; j < restLines.length; j++) {
+          need(14);
+          doc.text(restLines[j], ML + 26, y);
+          y += 14;
+        }
+      }
+      y += 8;
+    }
+    y += 4;
+  }
+
+  function needsBlock(el) {
+    var items = el.children;
+    for (var i = 0; i < items.length; i++) {
+      var h3 = items[i].querySelector('h3');
+      var p = items[i].querySelector('p');
+      need(46);
+      setFont('helvetica', 'bold', 10.5, INK);
+      doc.text(h3 ? txt(h3) : '', ML, y);
+      y += 14;
+      if (p) para(txt(p), { size: 10, color: MUTED, after: 12 });
+    }
+  }
+
+  function fmtDate(v) {
+    if (!v) return '';
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v);
+    if (!m) return v;
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return parseInt(m[3], 10) + ' ' + months[parseInt(m[2], 10) - 1] + ' ' + m[1];
+  }
+
+  function signBlock(el) {
+    var p = el.querySelector('p:not(.sign-note)');
+    var note = el.querySelector('.sign-note');
+    need(230);
+    var boxTop = y - 6;
+
+    if (p) {
+      setFont('times', 'normal', 10.5, INK);
+      var lines = doc.splitTextToSize(txt(p), CW - 28);
+      var yy = y + 16;
+      for (var i = 0; i < lines.length; i++) { doc.text(lines[i], ML + 14, yy); yy += 15; }
+      y = yy + 22;
+    }
+
+    var sigs = el.querySelectorAll('.sig');
+    var halfW = (CW - 28 - 34) / 2;
+    var padH = 44;
+    var data = window.__qfSign || { strokes: {}, dates: {} };
+    var rowTop = y;
+
+    for (var c = 0; c < sigs.length; c++) {
+      var x = ML + 14 + c * (halfW + 34);
+      var canvas = sigs[c].querySelector('canvas');
+      var lbl = sigs[c].querySelector('.sig-lbl');
+      var input = sigs[c].querySelector('.sig-date input');
+      var strokes = (canvas && data.strokes[canvas.id]) || [];
+
+      // the signature, redrawn as vectors at print size
+      if (strokes.length) {
+        doc.setDrawColor(INK[0], INK[1], INK[2]);
+        doc.setLineWidth(1.1);
+        doc.setLineCap('round');
+        doc.setLineJoin('round');
+        for (var s = 0; s < strokes.length; s++) {
+          var pts = strokes[s];
+          if (!pts || pts.length < 2) continue;
+          for (var q = 1; q < pts.length; q++) {
+            doc.line(x + pts[q - 1].x * halfW, rowTop + pts[q - 1].y * padH,
+                     x + pts[q].x * halfW,     rowTop + pts[q].y * padH);
+          }
+        }
+        doc.setLineCap('butt');
+        doc.setLineJoin('miter');
+      }
+
+      var lineY = rowTop + padH + 4;
+      doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+      doc.setLineWidth(0.7);
+      doc.line(x, lineY, x + halfW, lineY);
+
+      setFont('helvetica', 'bold', 7.5, MUTED);
+      var lblLines = doc.splitTextToSize((lbl ? txt(lbl) : '').toUpperCase(), halfW);
+      var ly = lineY + 12;
+      for (var k = 0; k < lblLines.length; k++) { doc.text(lblLines[k], x, ly, { charSpace: 0.8 }); ly += 11; }
+
+      var dv = fmtDate(input && (data.dates[input.id] || input.value));
+      ly += 8;
+      doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+      doc.setLineWidth(0.7);
+      doc.line(x + 34, ly + 10, x + halfW, ly + 10);
+      setFont('helvetica', 'bold', 7.5, MUTED);
+      doc.text('DATE', x, ly + 8, { charSpace: 0.8 });
+      if (dv) {
+        setFont('courier', 'normal', 10, INK);
+        doc.text(dv, x + 40, ly + 8);
+      }
+    }
+
+    y = rowTop + padH + 82;
+    doc.setDrawColor(INK[0], INK[1], INK[2]);
+    doc.setLineWidth(1.2);
+    doc.rect(ML, boxTop, CW, y - boxTop - 10);
+    y += 16;
+  }
+
+  function trackBlock(el) {
+    need(90);
+    hrule(RULE, 0.8, 6, 18);
+
+    var no = el.querySelector('.track-no');
+    var h3 = el.querySelector('.track-head h3');
+    var tags = el.querySelectorAll('.track-head .tag');
+
+    setFont('courier', 'bold', 8.5, MUTED);
+    doc.text(no ? txt(no).toUpperCase() : '', ML, y);
+    if (tags.length) {
+      var ts = [];
+      for (var t = 0; t < tags.length; t++) ts.push(txt(tags[t]));
+      setFont('courier', 'normal', 9, INK);
+      doc.text(ts.join('    '), PW - MR, y, { align: 'right' });
+    }
+    y += 17;
+    setFont('helvetica', 'bold', 15, INK);
+    doc.text(h3 ? txt(h3) : '', ML, y);
+    y += 17;
+
+    var why = el.querySelector('.track-why');
+    if (why) para(txt(why), { style: 'italic', color: MUTED, size: 10, after: 12 });
+
+    var steps = el.querySelectorAll('.steps > li');
+    for (var i = 0; i < steps.length; i++) {
+      var h4 = steps[i].querySelector('h4');
+      var p = steps[i].querySelector('p');
+      var bodyLines = [];
+      setFont('times', 'normal', 10, MUTED);
+      if (p) bodyLines = doc.splitTextToSize(txt(p), CW - 40);
+      need(20 + bodyLines.length * 13 + 8);
+
+      var boxY = y - 9;
+      doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+      doc.setLineWidth(0.6);
+      doc.setFillColor(251, 252, 250);
+      doc.rect(ML, boxY, 18, 18, 'FD');
+      setFont('courier', 'normal', 9, MUTED);
+      doc.text(String(i + 1), ML + 9, boxY + 12, { align: 'center' });
+
+      if (i < steps.length - 1) {
+        doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+        doc.setLineWidth(0.6);
+        doc.line(ML + 9, boxY + 18, ML + 9, boxY + 18 + bodyLines.length * 13 + 16);
+      }
+
+      setFont('helvetica', 'bold', 11, INK);
+      doc.text(h4 ? txt(h4) : '', ML + 30, y + 1);
+      y += 14;
+      setFont('times', 'normal', 10, MUTED);
+      for (var b = 0; b < bodyLines.length; b++) {
+        need(13);
+        doc.text(bodyLines[b], ML + 30, y);
+        y += 13;
+      }
+      y += 10;
+    }
+
+    var payoff = el.querySelector('.payoff');
+    if (payoff) {
+      var items = payoff.querySelectorAll('li');
+      var all = [];
+      setFont('times', 'normal', 10, INK);
+      for (var q = 0; q < items.length; q++) {
+        all.push(doc.splitTextToSize(txt(items[q]), CW - 40));
+      }
+      var totalLines = 0;
+      for (var z = 0; z < all.length; z++) totalLines += all[z].length;
+      var boxH = 22 + totalLines * 13 + all.length * 5 + 10;
+
+      var pageH = PH - MT - MB;
+      var boxed = boxH <= pageH;          // too tall to sit on one page: draw it unboxed
+      if (boxed) need(boxH + 8);
+      else need(60);
+      y += 8;
+      var top = y - 6;
+      if (boxed) {
+        doc.setFillColor(233, 240, 239);
+        doc.rect(ML, top, CW, boxH, 'F');
+        doc.setFillColor(ACCENT[0], ACCENT[1], ACCENT[2]);
+        doc.rect(ML, top, 2.5, boxH, 'F');
+      }
+
+      var yy = top + 16;
+      setFont('helvetica', 'bold', 8, ACCENT);
+      doc.text('WHAT THIS CHANGES FOR YOU', ML + 16, yy, { charSpace: 0.8 });
+      yy += 15;
+      for (var w = 0; w < all.length; w++) {
+        if (!boxed && yy > PH - MB) { doc.addPage(); yy = MT; }
+        doc.setDrawColor(ACCENT[0], ACCENT[1], ACCENT[2]);
+        doc.setLineWidth(0.7);
+        doc.line(ML + 16, yy - 3.5, ML + 23, yy - 3.5);
+        setFont('times', 'normal', 10, INK);
+        for (var v = 0; v < all[w].length; v++) {
+          if (!boxed && yy > PH - MB) { doc.addPage(); yy = MT; }
+          doc.text(all[w][v], ML + 30, yy);
+          yy += 13;
+        }
+        yy += 5;
+      }
+      y = boxed ? (top + boxH + 14) : (yy + 10);
+    }
+    y += 6;
+  }
+
+  function walk(el) {
+    var kids = el.children;
+    for (var i = 0; i < kids.length; i++) {
+      var n = kids[i];
+      var cl = n.classList;
+      if (cl.contains('track')) trackBlock(n);
+      else if (cl.contains('sec-head')) sectionHead(n);
+      else if (cl.contains('finding')) findingBlock(n);
+      else if (cl.contains('record')) recordBlock(n);
+      else if (cl.contains('phase')) phaseBlock(n);
+      else if (cl.contains('note')) noteBlock(n);
+      else if (cl.contains('gantt')) ganttBlock(n);
+      else if (cl.contains('tw')) tableBlock(n.querySelector('table'));
+      else if (cl.contains('retainer')) retainerBlock(n);
+      else if (cl.contains('needs')) needsBlock(n);
+      else if (cl.contains('sign')) signBlock(n);
+      else if (n.tagName === 'OL' && cl.contains('terms')) termsBlock(n);
+      else if (n.tagName === 'UL') bullets(n);
+      else if (n.tagName === 'P') para(txt(n), { after: 9 });
+      else walk(n);
+    }
+  }
+
+  function stampFooters() {
+    var total = doc.internal.getNumberOfPages();
+    for (var p = 2; p <= total; p++) {
+      doc.setPage(p);
+      doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
+      doc.setLineWidth(0.4);
+      doc.line(ML, PH - MB + 24, PW - MR, PH - MB + 24);
+      setFont('helvetica', 'normal', 7.5, MUTED);
+      doc.text('QUIET FLIGHT SURFBOARDS  ·  PROPOSAL  ·  15 OCT 2026', ML, PH - MB + 38, { charSpace: 0.6 });
+      setFont('courier', 'normal', 8, MUTED);
+      doc.text(String(p - 1) + ' / ' + (total - 1), PW - MR, PH - MB + 38, { align: 'right' });
+    }
+  }
+
+  function build() {
+    doc = new window.jspdf.jsPDF({ unit: 'pt', format: 'letter', compress: true });
+    doc.setProperties({
+      title: 'Quiet Flight Surfboards - Proposal',
+      subject: 'Ecommerce rebuild, custom board ordering and growth plan',
+      author: 'Rakibul Hasan'
+    });
+    cover();
+    var sections = document.querySelectorAll('main > section');
+    for (var i = 0; i < sections.length; i++) walk(sections[i]);
+    stampFooters();
+    return doc;
+  }
+
+  // ---------- wiring ----------
+  (function init() {
+    var btns = [document.getElementById('pdfbtn'), document.getElementById('pdfbtn2')]
+                 .filter(function (b) { return b; });
+    var msgEl = document.getElementById('pdfmsg');
+    if (!btns.length) return;
+
+    function say(s) {
+      if (!msgEl) return;
+      msgEl.textContent = s || '';
+      msgEl.hidden = !s;
+    }
+    function busy(on, text) {
+      btns.forEach(function (b) {
+        b.disabled = on;
+        var node = b.childNodes[b.childNodes.length - 1];
+        if (node && node.nodeType === 3) node.textContent = on ? ' ' + text : ' Download PDF';
+        else b.textContent = on ? text : 'Download PDF';
+      });
+    }
+
+    if (!window.jspdf || !window.jspdf.jsPDF) return;
+
+    var dlPromise = (window.claude && typeof window.claude.use === 'function')
+      ? window.claude.use('downloads').catch(function () { return null; })
+      : Promise.resolve(null);
+
+    dlPromise.then(function (downloads) {
+      // opened as a normal file there is no capability, so jsPDF saves the file itself
+      btns.forEach(function (b) { b.hidden = false; });
+
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          say('');
+          busy(true, 'Building');
+          setTimeout(function () {
+            var built;
+            try {
+              built = build();
+            } catch (e) {
+              busy(false);
+              say('Could not build the PDF');
+              return;
+            }
+            var filename = 'Quiet-Flight-Surfboards-Proposal.pdf';
+
+            if (!downloads) {                     // plain file: let jsPDF do the saving
+              try { built.save(filename); busy(false); say(''); }
+              catch (e2) { busy(false); say('Could not save the PDF'); }
+              return;
+            }
+
+            downloads.save({ filename: filename, data: built.output('blob') })
+              .then(function () { busy(false); say(''); })
+              .catch(function (err) {
+                busy(false);
+                var code = err && err.code;
+                if (code === 'declined') say('');
+                else if (code === 'rate_limited') say('Try again in a moment');
+                else if (code === 'too_large') say('File too large to save here');
+                else say('Save unavailable here');
+              });
+          }, 20);
+        });
+      });
+    });
+  })();
+})();
+</script>
+
+</body>
+</html>
