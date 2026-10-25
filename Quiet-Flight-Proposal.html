@@ -485,12 +485,12 @@ button { font: inherit; color: inherit; }
 
   /* ---- gantt ---- */
   .gantt { border: 1px solid var(--rule); background: var(--surface); padding: 20px 18px 14px; overflow-x: auto; }
-  .gantt-inner { min-width: 500px; }
-  .gantt-head, .gantt-row { display: grid; grid-template-columns: 148px repeat(6, 1fr); align-items: center; }
+  .gantt-inner { min-width: 700px; }
+  .gantt-head, .gantt-row { display: grid; grid-template-columns: 148px repeat(9, 1fr); align-items: center; }
   .gantt-head { border-bottom: 1px solid var(--rule); padding-bottom: 7px; margin-bottom: 11px; }
   .gantt-head span {
-    font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--muted);
-    text-align: center; font-variant-numeric: tabular-nums;
+    font-family: "IBM Plex Mono", monospace; font-size: 10px; color: var(--muted);
+    text-align: center; font-variant-numeric: tabular-nums; letter-spacing: -0.01em;
   }
   .gantt-head span:first-child {
     text-align: left; font-family: "Barlow Condensed", sans-serif; font-size: 12px;
@@ -504,6 +504,7 @@ button { font: inherit; color: inherit; }
   .bar { height: 15px; background: var(--accent); }
   .bar.is-free { background: var(--accent-sk); border: 1px solid var(--accent); }
   .bar.is-mkt { background: var(--amber-sk); border: 1px dashed var(--amber); }
+  .bar.is-hold { background: var(--flag); opacity: 0.55; }
   .gantt-foot {
     border-top: 1px solid var(--rule); margin-top: 6px; padding-top: 10px;
     font-size: 14.5px; color: var(--muted);
@@ -651,7 +652,7 @@ button { font: inherit; color: inherit; }
 
   <header class="mast">
     <div class="mast-top">
-      <div class="eyebrow">Proposal &middot; 15 October 2026</div>
+      <div class="eyebrow">Proposal &middot; 24 October 2026</div>
       <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
         <label class="voice-ctl" id="voicectl" hidden title="Reading voice">
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -691,7 +692,7 @@ button { font: inherit; color: inherit; }
       </div>
     </div>
     <h1>Quiet Flight<br>Surfboards</h1>
-    <p class="lede">Splitting the catalog off from the store, building the six store sections, and giving every board model its own page with photos and video.</p>
+    <p class="lede">A full redesign of every page, the catalog split off from the store, six store sections, and custom board ordering. Live in January, after your Black Friday sale.</p>
 
     <svg class="board-rule" viewBox="0 0 900 26" preserveAspectRatio="none" role="img" aria-label="Surfboard outline rule">
       <path d="M2 13 C 130 1, 400 1, 450 1 C 500 1, 770 1, 898 13 C 770 25, 500 25, 450 25 C 400 25, 130 25, 2 13 Z"
@@ -712,7 +713,7 @@ button { font: inherit; color: inherit; }
       </div>
       <div class="fact">
         <dt>Valid until</dt>
-        <dd class="num">15 November 2026</dd>
+        <dd class="num">24 November 2026</dd>
       </div>
     </dl>
   </header>
@@ -720,18 +721,18 @@ button { font: inherit; color: inherit; }
   <div class="topline">
     <div>
       <div class="k">Build total</div>
-      <div class="v">$1,650</div>
+      <div class="v">$3,100</div>
       <div class="n">One time, paid in three installments</div>
     </div>
     <div>
       <div class="k">Time to launch</div>
-      <div class="v">6 weeks</div>
-      <div class="n">From the day access is granted</div>
+      <div class="v">Jan 2026</div>
+      <div class="n">Live after the holiday trading</div>
     </div>
     <div>
-      <div class="k">Marketing, after launch</div>
-      <div class="v">$450<small style="font-size:14px;color:var(--muted)">/mo</small></div>
-      <div class="n">Six month minimum, optional</div>
+      <div class="k">Marketing and maintenance</div>
+      <div class="v">$850<small style="font-size:14px;color:var(--muted)">/mo</small></div>
+      <div class="n">After launch, optional. Ad budget not included</div>
     </div>
     <div class="free">
       <div class="k">Audit and urgent fixes</div>
@@ -753,13 +754,14 @@ button { font: inherit; color: inherit; }
             <li><a href="#p2"><span class="tk-n">2</span>Catalog, split from store</a></li>
             <li><a href="#p3"><span class="tk-n">3</span>The store, six sections</a></li>
             <li><a href="#p4"><span class="tk-n">4</span>Custom board ordering</a></li>
-            <li><a href="#p5"><span class="tk-n">5</span>Updates and video</a></li>
+            <li><a href="#p5"><span class="tk-n">5</span>Redesign, every page</a></li>
+            <li><a href="#p6"><span class="tk-n">6</span>Shopify development</a></li>
           </ol>
         </li>
         <li><a href="#schedule"><span class="tk-n">03</span>Schedule</a></li>
         <li><a href="#cost"><span class="tk-n">04</span>Cost</a></li>
         <li><a href="#how"><span class="tk-n">4.1</span>What the phases do</a></li>
-        <li><a href="#marketing"><span class="tk-n">05</span>Marketing</a></li>
+        <li><a href="#marketing"><span class="tk-n">05</span>Marketing and upkeep</a></li>
         <li><a href="#payment"><span class="tk-n">06</span>Payment schedule</a></li>
         <li><a href="#terms"><span class="tk-n">07</span>Terms</a></li>
         <li><a href="#needs"><span class="tk-n">08</span>What I need</a></li>
@@ -769,9 +771,9 @@ button { font: inherit; color: inherit; }
     <div class="tk-progress"><i id="tkbar"></i></div>
     <dl class="tk-cost">
       <dt>Build total</dt>
-      <dd>$1,650</dd>
+      <dd>$3,100</dd>
       <dt>Then, monthly</dt>
-      <dd>$450</dd>
+      <dd>$850</dd>
       <dt>Audit and urgent fix</dt>
       <dd class="free">No charge</dd>
     </dl>
@@ -818,40 +820,43 @@ taxable              <b>false</b></div>
   <section id="scope">
     <div class="sec-head"><span class="idx">02</span><h2>Scope of work</h2></div>
 
-    <p>Taking your email of 9 October point by point, here is where each thing lands.</p>
+    <p>This version follows our messages of 24 October. You said you would rather get the site to a place you like before putting money into marketing, so the whole site is redesigned here and the marketing plan waits until it is done. Your Black Friday sale is protected. Nothing changes the look of the site before it.</p>
 
     <div class="tw" style="margin-bottom:26px">
       <table>
         <thead><tr><th>What you asked for</th><th>Where it is handled</th></tr></thead>
         <tbody>
-          <tr><td>Stop the ordering glitch<span class="sub">People ordering quantities that are not for sale</span></td><td>Phase 1, no charge</td></tr>
+          <tr><td>Stop the ordering glitch<span class="sub">People ordering quantities that are not for sale</span></td><td>Phase 1, no charge, this week</td></tr>
           <tr><td>Catalog page separate from the store<span class="sub">The way Lost does it: a model page with no price and no cart</span></td><td>Phase 2</td></tr>
-          <tr><td>Add more models, make each model page more detailed with photos and video<span class="sub">Tabs for description, dimensions, photos and video</span></td><td>Phase 2</td></tr>
+          <tr><td>Add more models, each model page detailed with photos and video</td><td>Phase 2</td></tr>
           <tr><td>Store pages: in-stock, used, custom, factory seconds, apparel, hats</td><td>Phase 3</td></tr>
           <tr><td>Custom boards<span class="sub">An order form, the way Channel Islands builds one</span></td><td>Phase 4</td></tr>
-          <tr><td>Video on the front page</td><td>Phase 5</td></tr>
-          <tr><td>About us, keep the same</td><td>Left alone, bar the demo text</td></tr>
+          <tr><td>Redesign the whole site<span class="sub">Every page, not just a tidy-up</span></td><td>Phase 5, then built in Phase 6</td></tr>
+          <tr><td>Video on the front page</td><td>Phase 5 and 6</td></tr>
+          <tr><td>Black Friday sale, 27 November<span class="sub">Runs on the current layout, as agreed</span></td><td>Section 03</td></tr>
+          <tr><td>About us, keep the same<span class="sub">The words stay. Only the layout around them changes</span></td><td>Phase 5</td></tr>
         </tbody>
       </table>
     </div>
 
-    <p>The four sites you sent are not really four looks. They are three different jobs. Lost shows how a catalog page works when it is not trying to sell: description, dimensions, photos and video on tabs, no price, no cart. Channel Islands shows the custom order form. Rusty shows how a model connects to the boards you actually have. Christenson is the one that is purely about the look.</p>
+    <p>The four sites you sent are not really four looks. They are three different jobs. Lost shows how a catalog page works when it is not trying to sell: description, dimensions, photos and video on tabs, no price, no cart. Channel Islands shows the custom order form. Rusty shows how a model connects to the boards you actually have. Christenson is the one that is purely about the look, and that is the one Phase 5 draws from.</p>
 
     <div class="phase" id="p1">
       <div class="phase-top">
         <span class="phase-no">Phase 1</span>
         <h3>Stop the bleeding</h3>
         <span class="tag free">No charge</span>
-        <span class="tag when">2 working days</span>
+        <span class="tag when">This week</span>
       </div>
-      <p class="why">Done the day you give me access, before I send any invoice.</p>
+      <p class="why">This one cannot wait for the rest. Your Black Friday sale is on 27 November, and right now anyone can check out a board for $0.00 or order fifty of something you never put up for sale. A sale drives traffic. Traffic finds holes like this.</p>
       <ul>
         <li>Disable checkout on all 16 model pages so no one can buy a spec sheet</li>
         <li>Switch on stock tracking for all 31 boards, set to the real count from your floor</li>
         <li>Add SKUs and real shipping weights so board boxes quote the correct rate</li>
-        <li>Remove the demo text from the bottom of the About page. Your history stays as it is</li>
+        <li>Remove the demo text from the bottom of the About page</li>
         <li>Check your order history for $0.00 and bulk orders already placed, and report what is there</li>
       </ul>
+      <div class="note"><p><strong>Done before the sale</strong> &nbsp;This goes live within days of you saying go, and before any invoice. It does not touch the look of the site, so your Black Friday sale runs on the layout you have now, exactly as we agreed.</p></div>
     </div>
 
     <div class="phase" id="p2">
@@ -859,9 +864,9 @@ taxable              <b>false</b></div>
         <span class="phase-no">Phase 2</span>
         <h3>The catalog, separate from the store</h3>
         <span class="tag price">$650</span>
-        <span class="tag when">Weeks 1 to 3</span>
+        <span class="tag when">November</span>
       </div>
-      <p class="why">This is the main thing you asked for. The catalog stops being part of the shop and becomes what it was always meant to be: the place people go to read about a board.</p>
+      <p class="why">The catalog stops being part of the shop and becomes what it was always meant to be: the place people go to read about a board.</p>
       <ul>
         <li>All 16 model pages stop being products. No price, no cart, nothing to check out</li>
         <li>Each model page gets tabs, the way Lost does it: Description, Dimensions, Photos, Video</li>
@@ -872,7 +877,7 @@ taxable              <b>false</b></div>
         <li>Duplicate listings merged, three 6'0 Anti Heroes down to one</li>
         <li>Model titles and descriptions rewritten so they can be found in search</li>
       </ul>
-      <div class="note"><p><strong>Note</strong> &nbsp;Video on a model page is hosted on Shopify, not pulled in from YouTube. Shopify video loads faster and carries no branding or suggested videos at the end.</p></div>
+      <div class="note"><p><strong>Note</strong> &nbsp;Video is hosted on Shopify, not pulled in from YouTube. Shopify video loads faster and carries no outside branding or suggested videos at the end.</p></div>
     </div>
 
     <div class="phase" id="p3">
@@ -880,7 +885,7 @@ taxable              <b>false</b></div>
         <span class="phase-no">Phase 3</span>
         <h3>The store, six sections</h3>
         <span class="tag price">$500</span>
-        <span class="tag when">Weeks 3 to 5</span>
+        <span class="tag when">November</span>
       </div>
       <p class="why">Everything that is actually for sale, in the six sections you listed.</p>
       <ul>
@@ -899,7 +904,7 @@ taxable              <b>false</b></div>
         <span class="phase-no">Phase 4</span>
         <h3>Custom board ordering</h3>
         <span class="tag price">$350</span>
-        <span class="tag when">Weeks 4 to 6</span>
+        <span class="tag when">December</span>
       </div>
       <p class="why">Built on the Channel Islands pattern you sent, adapted to how your factory takes an order.</p>
       <ul>
@@ -912,24 +917,49 @@ taxable              <b>false</b></div>
         <li>Deposit or payment in full, whichever you prefer</li>
         <li>Orders arrive with every spec attached and print on one sheet for the shaping bay</li>
       </ul>
-      <div class="note"><p><strong>One constraint to know about</strong> &nbsp;Shopify allows three option menus per product. Channel Islands uses more than that. Anything past the third is built as an attached option instead. It works the same for the customer and still adjusts the price, but I want you to hear it now rather than at week five.</p></div>
+      <div class="note"><p><strong>One constraint to know about</strong> &nbsp;Shopify allows three option menus per product. Channel Islands uses more than that. Anything past the third is built as an attached option instead. It works the same for the customer and still adjusts the price, but I want you to hear it now rather than in December.</p></div>
     </div>
 
     <div class="phase" id="p5">
       <div class="phase-top">
         <span class="phase-no">Phase 5</span>
-        <h3>Modern updates and front page video</h3>
-        <span class="tag price">$150</span>
-        <span class="tag when">Weeks 5 to 6</span>
+        <h3>Redesign, every page</h3>
+        <span class="tag price">$700</span>
+        <span class="tag when">Nov to Dec</span>
       </div>
-      <p class="why">You said you are not looking to change the site much, so this is a tidy-up and the video, not a redesign. Your layout and your theme stay.</p>
+      <p class="why">This is the design work, drawn in Figma and approved by you before anything is built. Nine page types, which is the whole site.</p>
       <ul>
-        <li>Video section on the front page, muted and looping, with a still image behind it</li>
-        <li>Type sizes, spacing and buttons brought in line across the site</li>
-        <li>Your home page currently has no main heading at all. That gets fixed</li>
-        <li>Speed pass: shrink the images, load them only when needed, remove unused scripts</li>
-        <li>Page titles and descriptions set so Google can read the site properly</li>
-        <li>Checked on phones and tablets, which is where most surf traffic comes from</li>
+        <li>Home page, including the front page video section</li>
+        <li>Catalog index, the page that lists every model</li>
+        <li>Model page, with its four tabs</li>
+        <li>Store section page, the layout the six sections share</li>
+        <li>Product page for a board in stock</li>
+        <li>Custom board ordering page</li>
+        <li>About us. Your words stay exactly as they are, the layout around them is rebuilt</li>
+        <li>Contact page</li>
+        <li>Cart and checkout styling, so the last step matches the rest</li>
+        <li>Two rounds of changes included, on desktop and on mobile</li>
+      </ul>
+      <div class="note"><p><strong>You see it before it is built</strong> &nbsp;Every page is drawn and approved first. Changing a layout in Figma costs nothing. Changing it after it is built costs a rebuild, which is why design and development are two separate phases here.</p></div>
+    </div>
+
+    <div class="phase" id="p6">
+      <div class="phase-top">
+        <span class="phase-no">Phase 6</span>
+        <h3>Shopify development</h3>
+        <span class="tag price">$900</span>
+        <span class="tag when">December to January</span>
+      </div>
+      <p class="why">Building the approved designs into your Shopify theme, then launching. This happens on a copy of your store, so your live site keeps trading the whole time.</p>
+      <ul>
+        <li>All nine page types built from the approved Figma designs</li>
+        <li>Front page video section, muted and looping, with a still image behind it</li>
+        <li>Sections you can edit yourself in Shopify, rather than hard-coded pages</li>
+        <li>Speed pass: image compression, lazy loading, unused scripts removed</li>
+        <li>Page titles, headings and descriptions set so Google can read the site properly</li>
+        <li>Tested on phones and tablets, which is where most surf traffic comes from</li>
+        <li>Full backup of your current theme taken before anything is switched over</li>
+        <li>Launch, with the old theme kept as a one-click fallback</li>
       </ul>
       <div class="note"><p><strong>You asked how videos are on the front page</strong> &nbsp;They work well, with two rules. The video must not be the thing the page waits for before it appears, and it needs a still image behind it for phones on a weak signal. Hosted on Shopify and kept to about 10 to 20 seconds, a muted loop of the shaping floor is the right first thing a visitor sees from a factory. Pulled in from YouTube instead, it is heavier and slows the page down, so I will not do it that way.</p></div>
     </div>
@@ -938,10 +968,13 @@ taxable              <b>false</b></div>
   <!-- ============ 3 ============ -->
   <section id="schedule">
     <div class="sec-head"><span class="idx">03</span><h2>Schedule</h2></div>
+
+    <p>Built around your Black Friday sale rather than through it. The emergency fix goes in this week. Everything else is built on a copy of your store and only switched over in January, once the holiday trading is finished. Your sale runs on the layout you have now, which is what we agreed.</p>
+
     <div class="gantt">
       <div class="gantt-inner">
         <div class="gantt-head">
-          <span>Week</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+          <span>Period</span><span>Oct 27</span><span>Nov 3</span><span>Nov 10</span><span>Nov 17</span><span>Nov 24</span><span>Dec 1</span><span>Dec 15</span><span>Dec 22</span><span>Jan 5</span>
         </div>
         <div class="gantt-row">
           <div class="lbl">1 &nbsp;Emergency fix</div>
@@ -949,26 +982,42 @@ taxable              <b>false</b></div>
         </div>
         <div class="gantt-row">
           <div class="lbl">2 &nbsp;Catalog</div>
-          <div style="grid-column:2/5"><div class="bar"></div></div>
+          <div style="grid-column:3/6"><div class="bar"></div></div>
         </div>
         <div class="gantt-row">
           <div class="lbl">3 &nbsp;Store</div>
+          <div style="grid-column:4/6"><div class="bar"></div></div>
+        </div>
+        <div class="gantt-row">
+          <div class="lbl">5 &nbsp;Redesign</div>
           <div style="grid-column:4/7"><div class="bar"></div></div>
         </div>
         <div class="gantt-row">
-          <div class="lbl">4 &nbsp;Board builder</div>
-          <div style="grid-column:5/8"><div class="bar"></div></div>
+          <div class="lbl">4 &nbsp;Board ordering</div>
+          <div style="grid-column:7/8"><div class="bar"></div></div>
         </div>
         <div class="gantt-row">
-          <div class="lbl">5 &nbsp;Updates, video</div>
-          <div style="grid-column:6/8"><div class="bar"></div></div>
+          <div class="lbl">6 &nbsp;Shopify build</div>
+          <div style="grid-column:7/9"><div class="bar"></div></div>
+        </div>
+        <div class="gantt-row">
+          <div class="lbl">Black Friday</div>
+          <div style="grid-column:6/7"><div class="bar is-hold"></div></div>
+        </div>
+        <div class="gantt-row">
+          <div class="lbl">Holiday trading</div>
+          <div style="grid-column:9/10"><div class="bar is-hold"></div></div>
+        </div>
+        <div class="gantt-row">
+          <div class="lbl">Go live</div>
+          <div style="grid-column:10/11"><div class="bar"></div></div>
         </div>
         <div class="gantt-row">
           <div class="lbl">Marketing</div>
-          <div style="grid-column:7/8"><div class="bar is-mkt"></div></div>
+          <div style="grid-column:10/11"><div class="bar is-mkt"></div></div>
         </div>
       </div>
-      <div class="gantt-foot">Phases overlap where they safely can. The store is built while the catalog models are waiting on your photos and video. Marketing begins the week the work goes live.</div>
+      <div class="gantt-foot">The two red bars are holds. Nothing is deployed to your live store during Black Friday week or over the holidays. Design work carries on through the Black Friday hold because it happens in Figma, not on your store.</div>
     </div>
   </section>
 
@@ -988,7 +1037,7 @@ taxable              <b>false</b></div>
           </tr>
           <tr>
             <td>Phase 1 &nbsp;Emergency fix
-              <span class="sub">Ordering glitch stopped, stock tracking switched on</span></td>
+              <span class="sub">Ordering glitch closed before Black Friday, stock tracking on</span></td>
             <td class="amt r zero">No charge</td>
           </tr>
           <tr>
@@ -1007,13 +1056,18 @@ taxable              <b>false</b></div>
             <td class="amt r">$350.00</td>
           </tr>
           <tr>
-            <td>Phase 5 &nbsp;Modern updates and front page video
-              <span class="sub">Video section, tidy-up, speed and search pass</span></td>
-            <td class="amt r">$150.00</td>
+            <td>Phase 5 &nbsp;Redesign, every page
+              <span class="sub">Nine page types drawn in Figma, two rounds of changes, desktop and mobile</span></td>
+            <td class="amt r">$700.00</td>
+          </tr>
+          <tr>
+            <td>Phase 6 &nbsp;Shopify development
+              <span class="sub">The approved designs built into your theme, speed and search pass, launch</span></td>
+            <td class="amt r">$900.00</td>
           </tr>
           <tr class="total">
             <td>Build total</td>
-            <td class="amt r">$1,650.00</td>
+            <td class="amt r">$3,100.00</td>
           </tr>
         </tbody>
       </table>
@@ -1023,14 +1077,14 @@ taxable              <b>false</b></div>
 
   <!-- ============ 4.1 ============ -->
   <section id="how">
-    <div class="sec-head"><span class="idx">04.1</span><h2>What the four paid phases actually do</h2></div>
+    <div class="sec-head"><span class="idx">04.1</span><h2>What the five paid phases actually do</h2></div>
     <p>Section 02 lists what gets built. This section walks through it step by step, in the order the work happens. It also says what each phase changes for your business. If you read one part of this proposal, read this one.</p>
 
     <div class="track">
       <div class="track-head">
         <span class="track-no">Phase 2</span>
         <h3>The catalog, separate from the store</h3>
-        <span class="tag when">Weeks 1 to 3</span>
+        <span class="tag when">November</span>
         <span class="tag price">$650</span>
       </div>
       <p class="track-why">Right now your catalog and your shop are the same thing, which is why a spec sheet can be put in a cart. Pulling them apart is what you asked for, and it fixes the glitch as a side effect.</p>
@@ -1049,12 +1103,8 @@ taxable              <b>false</b></div>
           <p>Description, Dimensions, Photos, Video. The size run becomes a proper table with length, width, thickness and volume, so a rider can match a board to their weight without asking you.</p>
         </li>
         <li>
-          <h4>Load your photos and video</h4>
-          <p>Each model gets its own set, from what you send me. Video sits on Shopify rather than YouTube, so it loads fast and carries no outside branding.</p>
-        </li>
-        <li>
-          <h4>Add the new models</h4>
-          <p>Send me the list with dimensions and photos and they go in alongside the sixteen that are there.</p>
+          <h4>Load your photos and video, and add the new models</h4>
+          <p>Each model gets its own set, from what you send me. Send the list of new models with dimensions and they go in alongside the sixteen that are there.</p>
         </li>
         <li>
           <h4>Connect each model to what is in stock</h4>
@@ -1077,7 +1127,7 @@ taxable              <b>false</b></div>
       <div class="track-head">
         <span class="track-no">Phase 3</span>
         <h3>The store, six sections</h3>
-        <span class="tag when">Weeks 3 to 5</span>
+        <span class="tag when">November</span>
         <span class="tag price">$500</span>
       </div>
       <p class="track-why">The catalog tells people about boards. The store sells them. Six sections, as you listed them.</p>
@@ -1120,7 +1170,7 @@ taxable              <b>false</b></div>
       <div class="track-head">
         <span class="track-no">Phase 4</span>
         <h3>Custom board ordering</h3>
-        <span class="tag when">Weeks 4 to 6</span>
+        <span class="tag when">December</span>
         <span class="tag price">$350</span>
       </div>
       <p class="track-why">A board built to order is the most valuable thing your factory makes. Right now there is no way to order one on the website.</p>
@@ -1135,12 +1185,8 @@ taxable              <b>false</b></div>
           <p>How many weeks from deposit to a finished board. The page will say this before checkout, not after.</p>
         </li>
         <li>
-          <h4>Build the picker</h4>
-          <p>Model first, then a size from that model's real run, then construction, fins and tail. There is a notes box for anything the customer wants to tell the shaper.</p>
-        </li>
-        <li>
-          <h4>Wire up live pricing</h4>
-          <p>The total changes as the customer picks options, so nobody gets a surprise at the end.</p>
+          <h4>Build the picker and wire up live pricing</h4>
+          <p>Model first, then a size from that model's real run, then construction, fins and tail. The total changes as the customer picks options, so nobody gets a surprise at the end.</p>
         </li>
         <li>
           <h4>Make the order print for the bay</h4>
@@ -1166,56 +1212,111 @@ taxable              <b>false</b></div>
     <div class="track">
       <div class="track-head">
         <span class="track-no">Phase 5</span>
-        <h3>Modern updates and front page video</h3>
-        <span class="tag when">Weeks 5 to 6</span>
-        <span class="tag price">$150</span>
+        <h3>Redesign, every page</h3>
+        <span class="tag when">Nov to Dec</span>
+        <span class="tag price">$700</span>
       </div>
-      <p class="track-why">Small, on purpose. You said you are not looking to change the site much, so nothing here moves your layout or your theme.</p>
+      <p class="track-why">You told me you would rather get the site to a place you like before spending on marketing. This is that. Every page drawn before anything is built.</p>
 
       <ol class="steps">
         <li>
-          <h4>Add the video section to the front page</h4>
-          <p>Muted, looping, hosted on Shopify, with a still image behind it so the page never waits on it. About 10 to 20 seconds of the shaping floor.</p>
+          <h4>Agree the direction first</h4>
+          <p>You sent Christenson as a look you like. I come back with one direction, not five, built from your own photos and the 1972 story. We settle that before any page is drawn.</p>
         </li>
         <li>
-          <h4>Tidy the type and spacing</h4>
-          <p>Sizes, spacing and buttons brought in line across the site. The pages keep their shape, they just stop looking uneven.</p>
+          <h4>Draw the home page</h4>
+          <p>Including where the video sits, what comes under it, and how someone gets from the front page to a board in two clicks.</p>
         </li>
         <li>
-          <h4>Fix what Google reads first</h4>
-          <p>Your home page has no main heading at all. That, the page titles and the descriptions all get set properly.</p>
+          <h4>Draw the catalog and the model page</h4>
+          <p>The index of every model, and the model page with its four tabs. These two carry the most weight, because they are what a surfer came to see.</p>
         </li>
         <li>
-          <h4>Speed pass</h4>
-          <p>Shrink the images, load them only when they are needed, and take out the scripts the site does not use. This matters more once there is video on the page.</p>
+          <h4>Draw the store, product and ordering pages</h4>
+          <p>The layout the six store sections share, the page for a single board, and the custom ordering page.</p>
+        </li>
+        <li>
+          <h4>Draw About, Contact, cart and checkout</h4>
+          <p>Your About words stay exactly as they are. Only the layout around them is rebuilt. Cart and checkout get styled so the last step does not look like a different company.</p>
+        </li>
+        <li>
+          <h4>Two rounds of changes, then you approve</h4>
+          <p>Desktop and mobile, both shown. Nothing moves to Phase 6 until you have signed off on what it will look like.</p>
         </li>
       </ol>
 
       <div class="payoff">
         <div class="payoff-h">What this changes for you</div>
         <ul>
-          <li>The first thing a visitor sees is a board being shaped in your factory. That is the one thing your competitors cannot copy.</li>
-          <li>The site feels current without you paying for a redesign you did not ask for.</li>
-          <li>Speed is what makes search and paid ads worth doing later. Adding video without a speed pass would make the site slower, not better.</li>
+          <li>You see the whole site before a single page is built, so there are no surprises and no arguments at the end.</li>
+          <li>Changing your mind in Figma is free. Changing it after the build is a rebuild. Splitting design from development is what keeps that cost off your invoice.</li>
+          <li>Fifty-four years, a factory in Cape Canaveral and the shapers who came through it finally show up on the page. That is the one thing your competitors cannot copy.</li>
         </ul>
       </div>
     </div>
 
-    <p style="margin-top:26px">The order matters. Phase 3 has nothing to sort until the catalog in Phase 2 is real, and Phase 4 takes its sizes straight from the model pages Phase 2 builds. Running them in this order is what keeps the total at $1,650 instead of paying twice for the same work.</p>
+    <div class="track">
+      <div class="track-head">
+        <span class="track-no">Phase 6</span>
+        <h3>Shopify development</h3>
+        <span class="tag when">December to January</span>
+        <span class="tag price">$900</span>
+      </div>
+      <p class="track-why">Turning the approved designs into a working store, and getting it live without putting a day of trading at risk.</p>
+
+      <ol class="steps">
+        <li>
+          <h4>Build on a copy, never on the live store</h4>
+          <p>Your current site keeps taking orders the whole time. The new one is assembled next to it and you can look at it whenever you want.</p>
+        </li>
+        <li>
+          <h4>Build the nine page types</h4>
+          <p>Each one made as sections you can edit yourself in Shopify afterwards, rather than pages only a developer can change.</p>
+        </li>
+        <li>
+          <h4>Put the video on the front page</h4>
+          <p>Muted, looping, hosted on Shopify, with a still image behind it so the page never waits on it.</p>
+        </li>
+        <li>
+          <h4>Speed and search pass</h4>
+          <p>Shrink the images, load them only when needed, remove unused scripts, and set the titles and headings Google reads. This matters more once there is video on the page.</p>
+        </li>
+        <li>
+          <h4>Test on real phones</h4>
+          <p>Checked on phones and tablets before anything is switched. Most surf traffic arrives on a phone.</p>
+        </li>
+        <li>
+          <h4>Launch in January, with a way back</h4>
+          <p>Your old theme is backed up and kept. If anything is wrong on day one it goes back with one click while I fix it.</p>
+        </li>
+      </ol>
+
+      <div class="payoff">
+        <div class="payoff-h">What this changes for you</div>
+        <ul>
+          <li>You can edit your own pages afterwards. Changing a headline or swapping the video should not need me.</li>
+          <li>Launching in January means the new site gets its first real traffic in a quiet month, not during your busiest week.</li>
+          <li>Speed is what makes marketing worth paying for later. Adding video without a speed pass would make the site slower, not better.</li>
+          <li>The old theme stays as a fallback, so switching over is reversible.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top:26px">The order matters. Phase 3 has nothing to sort until the catalog in Phase 2 is real. Phase 4 takes its sizes straight from the model pages Phase 2 builds. And Phase 6 cannot start until you have approved Phase 5. Running them in this order is what keeps the total at $3,100 instead of paying twice for the same work.</p>
   </section>
 
   <!-- ============ 5 ============ -->
   <section id="marketing">
-    <div class="sec-head"><span class="idx">05</span><h2>Marketing, after launch</h2></div>
-    <p>Optional, and priced separately so you can decide after you have seen the work. On our call I said search takes at least six months to pay off. That is why the term is six months and not month to month. It does not work in three.</p>
+    <div class="sec-head"><span class="idx">05</span><h2>Marketing and maintenance, after launch</h2></div>
+    <p>You said you would rather get the site to a place you like before adding marketing, and that is how this proposal is built. Nothing here starts until the new site is live in January. It is optional and agreed separately from the build.</p>
 
     <div class="retainer">
       <div class="retainer-head">
         <div>
           <div class="eyebrow">Monthly retainer</div>
-          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:19px;margin-top:3px">Local search, content and social</div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:19px;margin-top:3px">Marketing and maintenance</div>
         </div>
-        <div class="price">$450<small> / month</small></div>
+        <div class="price">$850<small> / month</small></div>
       </div>
       <div class="retainer-body">
         <ul>
@@ -1225,10 +1326,13 @@ taxable              <b>false</b></div>
           <li>Two articles a month on the blog, which has never had a post published</li>
           <li>Shaping floor video cut for Instagram Reels and YouTube</li>
           <li>Email capture plus three automated sequences</li>
-          <li>Review generation from walk in customers</li>
+          <li>Google and Meta ads set up, run and tuned each month</li>
+          <li>Site maintenance: Shopify and app updates, broken links, speed checks</li>
+          <li>Small content changes each month, such as new boards or a seasonal banner</li>
           <li>One report a month, in plain English</li>
         </ul>
-        <p style="font-size:15.5px;color:var(--muted);margin-top:4px">Google Ads management can be added later, once there is enough sales data on the new store to aim it properly. Ad spend is paid by you directly to Google and is separate from this fee.</p>
+        <div class="note" style="margin-bottom:14px"><p><strong>Advertising budget is not included</strong> &nbsp;This $850 is the fee for doing the work. The money that goes to Google and Meta for the ads themselves is separate and is not part of it. Those platforms bill your own card directly, so you set the budget, you can see every dollar, and you can change or stop it whenever you like. I never hold your ad money.</p></div>
+        <p style="font-size:15.5px;color:var(--muted);margin-top:4px">Six month minimum, then month to month with thirty days notice. Search takes at least six months to pay off, which is why the term is six months and not month to month. It does not work in three.</p>
       </div>
     </div>
   </section>
@@ -1244,27 +1348,27 @@ taxable              <b>false</b></div>
         <tbody>
           <tr>
             <td>First &nbsp;<span style="color:var(--muted)" class="num">40%</span></td>
-            <td>On signing, which releases Phase 2<span class="sub">Phase 1 is already done by this point, at no charge</span></td>
-            <td class="amt r">$660.00</td>
+            <td>On signing, which releases Phases 2 and 5<span class="sub">Phase 1 is already done by this point, at no charge</span></td>
+            <td class="amt r">$1,240.00</td>
           </tr>
           <tr>
             <td>Second &nbsp;<span style="color:var(--muted)" class="num">40%</span></td>
-            <td>When the catalog and the store are both live<span class="sub">End of Phase 3</span></td>
-            <td class="amt r">$660.00</td>
+            <td>When you approve the Phase 5 designs<span class="sub">Before any build work starts on the new pages</span></td>
+            <td class="amt r">$1,240.00</td>
           </tr>
           <tr>
             <td>Third &nbsp;<span style="color:var(--muted)" class="num">20%</span></td>
-            <td>On launch, once Phases 4 and 5 are signed off<span class="sub">Board builder taking orders, video live</span></td>
-            <td class="amt r">$330.00</td>
+            <td>On launch in January<span class="sub">New site live, board builder taking orders</span></td>
+            <td class="amt r">$620.00</td>
           </tr>
           <tr class="total">
             <td colspan="2">Total</td>
-            <td class="amt r">$1,650.00</td>
+            <td class="amt r">$3,100.00</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p style="margin-top:16px">Invoices are payable within 14 days. Retainer months are invoiced on the first of each month, in advance. Payment through Fiverr as before, or by bank transfer, Wise or Payoneer if you prefer.</p>
+    <p style="margin-top:16px">Invoices are payable within 14 days. Retainer months are invoiced on the first of each month, in advance, and never include advertising budget. Payment through Fiverr as before, or by bank transfer, Wise or Payoneer if you prefer.</p>
   </section>
 
   <!-- ============ 7 ============ -->
@@ -1285,7 +1389,9 @@ taxable              <b>false</b></div>
       <li><b>Cancellation</b> Either of us can end this with seven days written notice. Work completed up to that date is invoiced and payable. Any installment already paid against a phase in progress is not refundable, but you keep everything produced up to that point.</li>
       <li><b>Retainer term</b> The marketing retainer runs for a minimum of six months, then continues month to month and can be cancelled with thirty days notice. It is entirely optional and is not a condition of the build work.</li>
       <li><b>Confidentiality</b> Your business information, sales figures and supplier details stay private. I will ask separately before using the finished site as a portfolio piece.</li>
-      <li><b>Validity</b> This proposal and its pricing hold until 15 November 2026.</li>
+      <li><b>Advertising budget</b> The monthly retainer in section 05 is a fee for work. Advertising spend on Google or Meta is separate, is never included in it, and is charged by those platforms directly to your own card. You set the budget and you can change or stop it at any time.</li>
+      <li><b>Trading holds</b> Nothing is deployed to your live store during Black Friday week or over the holiday trading period. Those dates are fixed by you and the schedule works around them.</li>
+      <li><b>Validity</b> This proposal and its pricing hold until 24 November 2026.</li>
     </ol>
   </section>
 
@@ -1299,6 +1405,7 @@ taxable              <b>false</b></div>
       <div><h3>The new models</h3><p>Which models to add to the catalog, with their size runs, so they can go in alongside the sixteen already there.</p></div>
       <div><h3>Photos and video per model</h3><p>What you want on each model page. Video can be rough phone footage from the floor, it does not need to be produced.</p></div>
       <div><h3>Lead time</h3><p>How long a custom order really takes from deposit to collection, so the page can say so honestly.</p></div>
+      <div><h3>Black Friday dates</h3><p>When your sale starts and ends, so nothing is deployed to your store inside that window.</p></div>
       <div><h3>The other websites</h3><p>The two or three sites you mentioned, and what you want changed on each. Those are quoted separately from this.</p></div>
       <div><h3>A business email</h3><p>Your contact address is a gmail account. An address on your own domain builds trust and keeps your emails out of the spam folder.</p></div>
     </div>
@@ -1339,7 +1446,7 @@ taxable              <b>false</b></div>
   <footer>
     <span>Rakibul Hasan &middot; Shopify Partner, Ecommerce UX</span>
     <span class="num"><a href="mailto:somotomox@gmail.com">somotomox@gmail.com</a> &nbsp;&middot;&nbsp; <a href="tel:+8801754917061">+880 1754 917061</a></span>
-    <span class="num">Issued 15 Oct 2026</span>
+    <span class="num">Issued 24 Oct 2026</span>
   </footer>
 
 </div>
@@ -1977,14 +2084,14 @@ taxable              <b>false</b></div>
   // ---------- cover ----------
   function cover() {
     y = MT + 6;
-    label('Proposal  ·  15 October 2026', MUTED, 8);
+    label('Proposal  ·  24 October 2026', MUTED, 8);
     y += 26;
 
     setFont('helvetica', 'bold', 34, INK);
     doc.text('QUIET FLIGHT', ML, y); y += 34;
     doc.text('SURFBOARDS', ML, y); y += 26;
 
-    para('Splitting the catalog off from the store, building the six store sections, and giving every board model its own page with photos and video.',
+    para('A full redesign of every page, the catalog split off from the store, six store sections, and custom board ordering. Live in January, after your Black Friday sale.',
          { size: 12, color: MUTED, after: 18 });
 
     hrule(RULE, 0.8, 4, 20);
@@ -1992,7 +2099,7 @@ taxable              <b>false</b></div>
     var facts = [
       ['Prepared for', 'Jim Leasure, Quiet Flight Surfboards\n377 Imperial Blvd C-1, Cape Canaveral FL'],
       ['Prepared by', 'Rakibul Hasan\nShopify Partner, Ecommerce UX\nsomotomox@gmail.com\n+880 1754 917061'],
-      ['Valid until', '15 November 2026']
+      ['Valid until', '24 November 2026']
     ];
     var colW = CW / 3;
     var top = y;
@@ -2013,9 +2120,9 @@ taxable              <b>false</b></div>
     hrule(RULE, 0.8, 0, 26);
 
     var nums = [
-      ['Build total', '$1,650', 'One time, paid in three installments', INK],
-      ['Time to launch', '6 weeks', 'From the day access is granted', INK],
-      ['Marketing, after launch', '$450 / mo', 'Six month minimum, optional', INK],
+      ['Build total', '$3,100', 'One time, paid in three installments', INK],
+      ['Goes live', 'Jan 2026', 'After the holiday trading', INK],
+      ['Marketing and maintenance', '$850 / mo', 'After launch, ad budget not included', INK],
       ['Audit and urgent fixes', '$0', 'The audit and the ordering fix, no charge', ACCENT]
     ];
     for (var k = 0; k < nums.length; k++) {
@@ -2169,11 +2276,12 @@ taxable              <b>false</b></div>
     var cell = trackW / weeks;
     need(rows.length * 20 + 50);
 
+    var heads = el.querySelectorAll('.gantt-head span');
     setFont('helvetica', 'bold', 7.5, MUTED);
-    doc.text('WEEK', ML, y, { charSpace: 0.8 });
-    setFont('courier', 'normal', 8, MUTED);
+    doc.text(txt(heads[0]).toUpperCase(), ML, y, { charSpace: 0.8 });
+    setFont('courier', 'normal', 6.5, MUTED);
     for (var w = 0; w < weeks; w++) {
-      doc.text(String(w + 1), trackX + cell * w + cell / 2, y, { align: 'center' });
+      doc.text(heads[w + 1] ? txt(heads[w + 1]) : String(w + 1), trackX + cell * w + cell / 2, y, { align: 'center' });
     }
     y += 6;
     doc.setDrawColor(RULE[0], RULE[1], RULE[2]);
@@ -2201,7 +2309,11 @@ taxable              <b>false</b></div>
         var wdt = (e - s) * cell - 3;
         var free = bar.classList.contains('is-free');
         var mkt = bar.classList.contains('is-mkt');
-        if (mkt) {
+        var hold = bar.classList.contains('is-hold');
+        if (hold) {
+          doc.setFillColor(FLAG[0], FLAG[1], FLAG[2]);
+          doc.rect(x, y, wdt, 9, 'F');
+        } else if (mkt) {
           doc.setFillColor(250, 244, 233);
           doc.setDrawColor(AMBER[0], AMBER[1], AMBER[2]);
           doc.setLineWidth(0.6);
@@ -2608,7 +2720,7 @@ taxable              <b>false</b></div>
       doc.setLineWidth(0.4);
       doc.line(ML, PH - MB + 24, PW - MR, PH - MB + 24);
       setFont('helvetica', 'normal', 7.5, MUTED);
-      doc.text('QUIET FLIGHT SURFBOARDS  ·  PROPOSAL  ·  15 OCT 2026', ML, PH - MB + 38, { charSpace: 0.6 });
+      doc.text('QUIET FLIGHT SURFBOARDS  ·  PROPOSAL  ·  24 OCT 2026', ML, PH - MB + 38, { charSpace: 0.6 });
       setFont('courier', 'normal', 8, MUTED);
       doc.text(String(p - 1) + ' / ' + (total - 1), PW - MR, PH - MB + 38, { align: 'right' });
     }
